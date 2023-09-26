@@ -3,5 +3,30 @@ layout: default
 title: About
 permalink: /about/
 ---
-Hi, thanks for visiting! This page is still under construction. 
-In the meantime, check out my data visualization work at my [Tableau Public profile](https://public.tableau.com/app/profile/nicole.mark/vizzes) or [Dribbble portfolio](https://dribbble.com/nicoledesignsdata).
+# Nicole Mark
+## Data Visualization | Data Science | Analytics Consulting
+
+Hi, thanks for visiting!
+
+## Check out my work
+[Tableau Public](https://public.tableau.com/app/profile/nicole.mark/vizzes)  
+[Dribbble](https://dribbble.com/nicoledesignsdata)
+
+
+
+## Stack
+
+### Programming languages
+SQL  
+Python  
+R  
+HTML  
+CSS  
+JavaScript
+
+### Software
+Tableau  
+Figma  
+Adobe Illustrator
+
+
