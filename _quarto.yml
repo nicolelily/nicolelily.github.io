@@ -3,8 +3,10 @@ project:
   output-dir: docs
 
 website:
-  title: "Nicolelily.github.io"
+  title: "Nicole Lillian Mark"
   navbar:
+    search: true
+    logo: 
     left:
       - href: index.qmd
         text: Home
