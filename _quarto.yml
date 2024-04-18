@@ -6,7 +6,7 @@ website:
   title: "Nicole Lillian Mark"
   navbar:
     search: true
-    logo: 
+    logo: "https://i.postimg.cc/5NrTmpx7/Nicole-Designs-Data-new-logo-white-background.png"
     left:
       - href: index.qmd
         text: Home
