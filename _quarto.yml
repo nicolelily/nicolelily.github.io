@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Nicole Lillian Mark"
+  title: "Nicole Mark"
   navbar:
     search: true
     logo: "https://i.postimg.cc/5NrTmpx7/Nicole-Designs-Data-new-logo-white-background.png"
