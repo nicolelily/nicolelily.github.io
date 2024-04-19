@@ -4,12 +4,12 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "👋🏼 Hi! I’m Nicole, a data practitioner based in 🌴 Tampa, Florida."
+    "text": "👋🏼 Hi! I’m Nicole, a data practitioner based in 🌴 Tampa, Florida.\n\ndata = FileAttachment(\"ommu.csv\").csv\n\n\n\n\n\n\nsorted = data .map((d) =&gt; ({ Company: d[“MMTC Name”], Pounds: d[“Cannabis dispensed (lbs)”], Percentage: d[“Cannabis dispensed (percent of total lbs)”] })) .sort()```\nPlot.plot({ title: “Trulieve dominates the Florida medical cannabis market”, color: { scheme: “PRGn”, type: “ordinal”, legend: false }, x: { label: “Pounds of cannabis dispensed”, grid: true, type: “linear” }, y: { label: “Licensed MMTC” }, marginTop: 20, marginRight: 20, marginLeft: 190, subtitle: “Pounds of smokable cannabis dispensed, March 15-April 11, 2024”, caption: “Data: Florida Office of Medical Marijuana Use”, marginBottom: 40, height: 500, width: 800, insetTop: 0, marks: [ Plot.barX( sorted, Plot.groupY( { x: “sum” }, { x: “Pounds”, y: “Company”, fill: “Company”, tip: true, sort: { y: “-x” } } ) ), Plot.ruleX([0]) ] })```"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Nicole Lillian Mark",
+    "title": "Nicole Mark",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   }
