@@ -26,7 +26,8 @@
   "dependencies": {
     "fitvids": "^2.1.1",
     "jquery": "^3.7.1",
-    "jquery-smooth-scroll": "^2.2.0"
+    "jquery-smooth-scroll": "^2.2.0",
+    "plotly.js-dist": "^3.0.3"
   },
   "devDependencies": {
     "onchange": "^7.1.0",
