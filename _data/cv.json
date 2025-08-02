@@ -1,152 +1,246 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Nicole Lillian Mark",
+    "email": "nicoledesignsdata@pm.me",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://nicolelily.github.io",
+    "summary": "Data visualization engineer at Nicole Designs Data LLC. Dog mom, vegan for the animals.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "United States",
       "countryCode": "US",
       "region": ""
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
         "network": "ORCID",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0000-0001-8383-274X"
+      },
+      {
+        "network": "Scopus",
+        "username": "",
+        "url": "https://www.scopus.com/authid/detail.uri?authorId=57208165220"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "nicolelily",
+        "url": "https://github.com/nicolelily"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "nicole-mark",
+        "url": "https://linkedin.com/in/nicole-mark"
+      },
+      {
+        "network": "Medium",
+        "username": "",
+        "url": "https://medium.com/@nicolemark"
+      },
+      {
+        "network": "YouTube",
+        "username": "nicolelily",
+        "url": "https://youtube.com/@nicolelily"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Nicole Designs Data LLC",
+      "position": "Principal Consultant",
+      "website": "",
+      "startDate": "01/2023",
+      "endDate": "Present",
+      "summary": "Data visualization development with Tableau, JavaScript/TypeScript (Observable Plot, d3.js, chart.js, Recharts), Python (Plotly, Seaborn), and AWS QuickSight. Analytics strategy consulting, Tableau Desktop and Tableau Cloud training, data governance initiatives, and tech stack assessment."
+    },
+    {
+      "company": "Cart.com",
+      "position": "Data Visualization Engineer",
+      "website": "",
+      "startDate": "05/2022",
+      "endDate": "01/2023",
+      "summary": "On an Agile engineering team, created new data visualizations from ideation, wireframing, prototyping, and testing to deployment in production, primarily in Tableau. Collaborated on designs using Figma with the UX design team. Updated existing visualizations to meet new technical requirements, design standards, or customer needs. Supported Tableau Desktop and Tableau Server users across the organization. Advocated the adoption of a data dictionary, the clear definition of metrics, and data quality and governance initiatives."
+    },
+    {
+      "company": "Olive AI",
+      "position": "Data Program Analyst",
+      "website": "",
+      "startDate": "05/2021",
+      "endDate": "05/2022",
+      "summary": "Coordinated data management activities including mapping product-specific data, HL7, and X12 standardized healthcare data. Co-led the data governance committee, made recommendations for management of new data and changes to our existing data contract. Worked with complex nested data structures stored in Postgres and MySQL databases within a multi-cloud data architecture including AWS S3, Redshift, Databricks, and Fivetran. Created and edited complex SQL queries. Developed data visualization style guide and Tableau dashboard templates for use throughout the organization. Data visualization, pharmacy, and 340B subject-matter expert."
+    },
+    {
+      "company": "Idaho State University",
+      "position": "Data Curator/Project Coordinator",
+      "website": "",
+      "startDate": "08/2020",
+      "endDate": "09/2021",
+      "summary": "Collected, interpreted, and analyzed data for the ISU/CPESN Idaho COVID-19 Point-of-Care Testing Program. Developed a JavaScript web application for secure collection of PHI for delivery to the state's public health districts. Created program website. Advised pharmacy owners regarding technology solutions for documentation of their care plans. Calculated pharmacy payments and invoiced the university. Curated all data, contributed approximately 35% of the writing and all data visualizations to the project manuscript."
+    },
+    {
+      "company": "Aspen RxHealth",
+      "position": "Data Analyst",
+      "website": "",
+      "startDate": "02/2019",
+      "endDate": "06/2021",
+      "summary": "Created scheduled and ad-hoc reporting, data visualizations, and operational metrics dashboards with Tableau Desktop and AWS QuickSight. Answered data-related questions posed by clinical, operations, and sales teams. Gathered requirements from business stakeholders, documented decisions and actions in Jira. Served on the Data Governance Committee, Measures and Specifications Subcommittee, and Data Dictionary Subcommittee."
+    },
+    {
+      "company": "Community Care of North Carolina",
+      "position": "Data Analyst, Medicaid Pharmacy Programs & CMMI Innovations Grant",
+      "website": "",
+      "startDate": "05/2016",
+      "endDate": "04/2019",
+      "summary": "Analyzed and reported CMMI Innovations Grant Project data. Trained community pharmacy staff in North Carolina to use PHARMACeHOME software. Provided technical support, answered documentation and payment-related questions, and assured CMS and CMMI Innovations Grant requirements were met. Reviewed documentation submitted from pharmacies for quality. Facilitated CPESN QA, QI, and Best Practices Work Group. Served as Pharmacist eCare Plan (PeCP) subject matter expert. Contributed to the manuscript Stages of Change: Moving Community Pharmacies From a Drug Dispensing to Population Health Management Model, published in Medical Care Research and Review, April 2019."
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "University of Colorado Boulder",
+      "area": "Master of Science in Data Science",
+      "studyType": "MS",
+      "startDate": "2023",
+      "endDate": "",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
+      "institution": "University of Maryland Baltimore County",
+      "area": "B.A. in English Communications and Technology",
+      "studyType": "BA",
       "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "endDate": "2006",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "skills": [
+    {
+      "name": "Data Visualization",
+      "level": "",
+      "keywords": [
+        "Tableau Desktop",
+        "Tableau Cloud",
+        "Tableau Server",
+        "Tableau Prep Builder",
+        "Microsoft Power BI",
+        "AWS QuickSight",
+        "D3.js",
+        "Plotly",
+        "MatplotLib",
+        "Seaborn"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "SQL",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Data & Analytics",
+      "level": "",
+      "keywords": [
+        "Pandas",
+        "Data Structures",
+        "PostgreSQL",
+        "Snowflake",
+        "AWS Redshift",
+        "AWS S3",
+        "AWS Glue",
+        "Athena",
+        "dbt",
+        "Alteryx",
+        "Dataiku"
+      ]
+    },
+    {
+      "name": "Design & Tools",
+      "level": "",
+      "keywords": [
+        "Figma",
+        "Adobe Illustrator",
+        "JIRA",
+        "Agile",
+        "Scrum",
+        "Qualtrics"
+      ]
+    },
+    {
+      "name": "Healthcare Standards",
+      "level": "",
+      "keywords": [
+        "HL7"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Conversational"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Yoga",
+      "keywords": [
+        "Yoga Alliance-registered yoga teacher (200-hour level)",
+        "Yoga Alliance Continuing Education Provider"
+      ]
+    },
+    {
+      "name": "Personal Interests",
+      "keywords": [
+        "Literature",
+        "Travel",
+        "Dogs",
+        "Vegan lifestyle"
+      ]
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Developing sustainable workflows for community pharmacy-based SARS-CoV-2 testing",
+      "publisher": "Journal of the American Pharmacists Association",
+      "releaseDate": "2021-08-14",
+      "website": "http://nicolelily.github.io/files/DevelopingSustainableWorkflowsforCommunity-PharmacyBasedSARS-CoV-2Testing_pre-proof.pdf",
+      "summary": "This study describes the successful rapid implementation of a COVID-19 testing program across 13 community pharmacies in Idaho from September-December 2020, which performed 2,425 tests and demonstrated that independent pharmacies can effectively expand public health testing capacity, particularly in rural and underserved areas."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Publication Title 2 (TO BE UPDATED)",
+      "publisher": "Journal Name (TO BE UPDATED)",
+      "releaseDate": "YYYY-MM-DD",
+      "website": "",
+      "summary": "Publication summary to be added."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Publication Title 3 (TO BE UPDATED)",
+      "publisher": "Journal Name (TO BE UPDATED)",
+      "releaseDate": "YYYY-MM-DD",
+      "website": "",
+      "summary": "Publication summary to be added."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
+  "presentations": [],
+  "teaching": [],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
+      "name": "Major Hurricanes Impacting Florida, 1985-2024",
+      "category": "data visualization",
       "date": "",
       "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "description": "Data visualization showing major hurricanes that have impacted Florida over the past 40 years.<br/><img src='/images/Major Hurricanes Impacting Florida.png'>"
     }
   ]
 }
