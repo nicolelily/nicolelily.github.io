@@ -4,13 +4,13 @@
     "email": "nicoledesignsdata@pm.me",
     "phone": "",
     "website": "https://nicolelily.github.io",
-    "summary": "Data visualization engineer at Nicole Designs Data LLC. Dog mom, vegan for the animals.",
+    "summary": "Data visualization engineer, analytics consultant, and yoga teacher.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "United States",
+      "city": "Salisbury",
       "countryCode": "US",
-      "region": ""
+      "region": "MD"
     },
     "profiles": [
       {
@@ -39,6 +39,11 @@
         "url": "https://medium.com/@nicolemark"
       },
       {
+        "network": "Yoga Alliance",
+        "username": "",
+        "url": "https://r.yogaalliance.org/TeacherPublicProfile?tid=105273"
+      },
+      {
         "network": "YouTube",
         "username": "nicolelily",
         "url": "https://youtube.com/@nicolelily"
@@ -57,7 +62,7 @@
     {
       "company": "Cart.com",
       "position": "Data Visualization Engineer",
-      "website": "",
+      "website": "https://cart.com/",
       "startDate": "05/2022",
       "endDate": "01/2023",
       "summary": "On an Agile engineering team, created new data visualizations from ideation, wireframing, prototyping, and testing to deployment in production, primarily in Tableau. Collaborated on designs using Figma with the UX design team. Updated existing visualizations to meet new technical requirements, design standards, or customer needs. Supported Tableau Desktop and Tableau Server users across the organization. Advocated the adoption of a data dictionary, the clear definition of metrics, and data quality and governance initiatives."
@@ -109,7 +114,7 @@
       "institution": "University of Maryland Baltimore County",
       "area": "B.A. in English Communications and Technology",
       "studyType": "BA",
-      "startDate": "",
+      "startDate": "2001",
       "endDate": "2006",
       "gpa": null,
       "courses": []
@@ -124,7 +129,6 @@
         "Tableau Cloud",
         "Tableau Server",
         "Tableau Prep Builder",
-        "Microsoft Power BI",
         "AWS QuickSight",
         "D3.js",
         "Plotly",
@@ -138,6 +142,7 @@
       "keywords": [
         "Python",
         "JavaScript",
+        "TypeScript",
         "SQL",
         "HTML",
         "CSS"
@@ -148,6 +153,7 @@
       "level": "",
       "keywords": [
         "Pandas",
+        "Polars",
         "Data Structures",
         "PostgreSQL",
         "Snowflake",
@@ -155,7 +161,6 @@
         "AWS S3",
         "AWS Glue",
         "Athena",
-        "dbt",
         "Alteryx",
         "Dataiku"
       ]
@@ -166,7 +171,7 @@
       "keywords": [
         "Figma",
         "Adobe Illustrator",
-        "JIRA",
+        "Jira",
         "Agile",
         "Scrum",
         "Qualtrics"
@@ -176,7 +181,9 @@
       "name": "Healthcare Standards",
       "level": "",
       "keywords": [
-        "HL7"
+        "HL7",
+        "FHIR",
+        "X12"
       ]
     }
   ],
@@ -194,8 +201,8 @@
     {
       "name": "Yoga",
       "keywords": [
-        "Yoga Alliance-registered yoga teacher (200-hour level)",
-        "Yoga Alliance Continuing Education Provider"
+        "Registered Yoga Teacher (E-RYT 200)",
+        "Yoga Alliance Continuing Education Provider (YACEP)"
       ]
     },
     {
@@ -218,19 +225,18 @@
       "summary": "This study describes the successful rapid implementation of a COVID-19 testing program across 13 community pharmacies in Idaho from September-December 2020, which performed 2,425 tests and demonstrated that independent pharmacies can effectively expand public health testing capacity, particularly in rural and underserved areas."
     },
     {
-      "name": "Publication Title 2 (TO BE UPDATED)",
-      "publisher": "Journal Name (TO BE UPDATED)",
-      "releaseDate": "YYYY-MM-DD",
-      "website": "",
-      "summary": "Publication summary to be added."
+      "name": "Stages of Change: Moving Community Pharmacies From a Drug Dispensing to Population Health Management Model",
+      "publisher": "Medical Care Research and Review",
+      "releaseDate": "2019-04-03",
+      "website": "https://journals.sagepub.com/doi/10.1177/1077558719841159",
+      "summary": "This study examined how 40 community pharmacies in North Carolina implemented a Medicaid population health management intervention, comparing implementation strategies between high- and low-performing pharmacies using Rogers's innovation implementation framework. The research found that while both groups used similar strategies, high-performing pharmacies executed them more effectively and were more likely to reach sustainment, particularly in areas like stakeholder engagement, staff training, and relationship-building with primary care providers."
     },
     {
-      "name": "Publication Title 3 (TO BE UPDATED)",
-      "publisher": "Journal Name (TO BE UPDATED)",
-      "releaseDate": "YYYY-MM-DD",
-      "website": "",
-      "summary": "Publication summary to be added."
-    }
+      "name": "Evolution of the Pharmacy Practice Model to Improve Patient and Learner Outcomes: A Partnership in Patient Care Initiative (PIPC) in the HSCT Population",
+      "publisher": "Biology of Blood and Marrow Transplantation",
+      "releaseDate": "2012-02-01",
+      "website": "https://www.astctjournal.org/article/S1083-8791(11)00668-9/fulltext",
+      "summary": "This initiative implemented a layered learning practice model (LLPM) in hematopoietic stem cell transplant care, where an Attending Pharmacist manages a team of pharmacists, residents, and students to achieve 100% completion rates for key pharmacy services while expanding educational opportunities for learners."
   ],
   "presentations": [],
   "teaching": [],
