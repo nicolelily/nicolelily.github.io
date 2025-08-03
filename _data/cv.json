@@ -2,9 +2,9 @@
   "basics": {
     "name": "Nicole Lillian Mark",
     "email": "nicoledesignsdata@pm.me",
-    "phone": "",
+    "phone": "+1 813.230.7946",
     "website": "https://nicolelily.github.io",
-    "summary": "Data visualization engineer, analytics consultant, and yoga teacher.",
+    "summary": "Data visualization developer, analytics consultant, and design engineer",
     "location": {
       "address": "",
       "postalCode": "",
@@ -77,8 +77,8 @@
     },
     {
       "company": "Idaho State University",
-      "position": "Data Curator/Project Coordinator",
-      "website": "",
+      "position": "Data Curator",
+      "website": "https://www.isu.edu",
       "startDate": "08/2020",
       "endDate": "09/2021",
       "summary": "Collected, interpreted, and analyzed data for the ISU/CPESN Idaho COVID-19 Point-of-Care Testing Program. Developed a JavaScript web application for secure collection of PHI for delivery to the state's public health districts. Created program website. Advised pharmacy owners regarding technology solutions for documentation of their care plans. Calculated pharmacy payments and invoiced the university. Curated all data, contributed approximately 35% of the writing and all data visualizations to the project manuscript."
@@ -86,7 +86,7 @@
     {
       "company": "Aspen RxHealth",
       "position": "Data Analyst",
-      "website": "",
+      "website": "https://aspenrxhealth.com",
       "startDate": "02/2019",
       "endDate": "06/2021",
       "summary": "Created scheduled and ad-hoc reporting, data visualizations, and operational metrics dashboards with Tableau Desktop and AWS QuickSight. Answered data-related questions posed by clinical, operations, and sales teams. Gathered requirements from business stakeholders, documented decisions and actions in Jira. Served on the Data Governance Committee, Measures and Specifications Subcommittee, and Data Dictionary Subcommittee."
