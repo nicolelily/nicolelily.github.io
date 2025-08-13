@@ -25,6 +25,29 @@ redirect_from:
       width: 70%;
     }
   }
+
+  /* Dark theme support for CV page */
+  html[data-theme="dark"] .cv-container {
+    color: var(--global-text-color);
+  }
+
+  html[data-theme="dark"] .cv-item-date,
+  html[data-theme="dark"] .cv-item-subtitle,
+  html[data-theme="dark"] .cv-section h2 i,
+  html[data-theme="dark"] .cv-language-fluency,
+  html[data-theme="dark"] .cv-references {
+    color: var(--global-text-color-light);
+  }
+
+  html[data-theme="dark"] .cv-skill-category h3,
+  html[data-theme="dark"] .cv-interest h3 {
+    color: var(--global-text-color);
+  }
+
+  html[data-theme="dark"] .cv-header-nav,
+  html[data-theme="dark"] .cv-download-links {
+    border-color: var(--global-border-color);
+  }
 </style>
 
 {% include cv-template.html %}
