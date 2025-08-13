@@ -3,7 +3,7 @@
   padding: 1rem 0;
   text-align: center;
   margin-bottom: 2rem;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid var(--global-border-color, #f2f2f2);
 }
 
 .cv-header-nav .home-button {
@@ -33,7 +33,7 @@
   margin-top: 2rem;
   text-align: center;
   padding: 1rem;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid var(--global-border-color, #f2f2f2);
 }
 
 .cv-download-links a {
