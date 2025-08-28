@@ -1,10 +1,9 @@
 {
   "name": "academic-pages",
-  "version": "0.8.1.1",
   "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "git+https://github.com/academicpages/academicpages.github.io.git"
   },
   "keywords": [
     "jekyll",
@@ -12,8 +11,12 @@
     "minimal"
   ],
   "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
+    {
+      "name": "Michael Rose"
+    },
+    {
+      "name": "Robert Zupko"
+    }
   ],
   "license": "MIT",
   "bugs": {
@@ -30,12 +33,22 @@
     "plotly.js-dist": "^3.0.3"
   },
   "devDependencies": {
+    "backstopjs": "^6.3.25",
     "onchange": "^7.1.0",
     "uglify-js": "^3.17.4"
   },
   "scripts": {
     "uglify": "uglifyjs node_modules/jquery/dist/jquery.min.js node_modules/fitvids/dist/fitvids.min.js node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js -c -m -o assets/js/main.min.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify"
-  }
+    "build:js": "npm run uglify",
+    "backstop:test": "backstop test",
+    "backstop:approve": "backstop approve",
+    "backstop:reference": "backstop reference",
+    "backstop:openReport": "backstop openReport",
+    "watch": "onchange '_includes/**/*,_layouts/**/*,_pages/**/*,_posts/**/*,_publications/**/*,_talks/**/*,_teaching/**/*,_portfolio/**/*,_data/**/*,_sass/**/*,assets/**/*,images/**/*,*.html,*.md,*.yml' -- open https://nicolelily.github.io"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "type": "commonjs"
 }

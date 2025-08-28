@@ -1,0 +1,2022 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_0_body_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_0_body_0_mobile.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Homepage_0_body_0_mobile.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_1_masthead_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_1_masthead_0_mobile.png",
+        "selector": ".masthead",
+        "fileName": "nicolelily_academic_site_Homepage_1_masthead_0_mobile.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_2_page__hero_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_2_page__hero_0_mobile.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Homepage_2_page__hero_0_mobile.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_3_page__content_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_3_page__content_0_mobile.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Homepage_3_page__content_0_mobile.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_0_body_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_0_body_1_tablet.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Homepage_0_body_1_tablet.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_1_masthead_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_1_masthead_1_tablet.png",
+        "selector": ".masthead",
+        "fileName": "nicolelily_academic_site_Homepage_1_masthead_1_tablet.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_2_page__hero_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_2_page__hero_1_tablet.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Homepage_2_page__hero_1_tablet.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_3_page__content_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_3_page__content_1_tablet.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Homepage_3_page__content_1_tablet.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_0_body_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_0_body_2_desktop.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Homepage_0_body_2_desktop.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_1_masthead_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_1_masthead_2_desktop.png",
+        "selector": ".masthead",
+        "fileName": "nicolelily_academic_site_Homepage_1_masthead_2_desktop.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_2_page__hero_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_2_page__hero_2_desktop.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Homepage_2_page__hero_2_desktop.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_3_page__content_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_3_page__content_2_desktop.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Homepage_3_page__content_2_desktop.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_0_body_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_0_body_3_wide.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Homepage_0_body_3_wide.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_1_masthead_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_1_masthead_3_wide.png",
+        "selector": ".masthead",
+        "fileName": "nicolelily_academic_site_Homepage_1_masthead_3_wide.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_2_page__hero_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_2_page__hero_3_wide.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Homepage_2_page__hero_3_wide.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Homepage_3_page__content_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Homepage_3_page__content_3_wide.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Homepage_3_page__content_3_wide.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_0_body_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_0_body_0_mobile.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_About_Page_0_body_0_mobile.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_1_page__hero_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_1_page__hero_0_mobile.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_About_Page_1_page__hero_0_mobile.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_2_page__content_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_2_page__content_0_mobile.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_About_Page_2_page__content_0_mobile.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_3_author__avatar_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_3_author__avatar_0_mobile.png",
+        "selector": ".author__avatar",
+        "fileName": "nicolelily_academic_site_About_Page_3_author__avatar_0_mobile.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_4_author__avatar__n1_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_4_author__avatar__n1_0_mobile.png",
+        "selector": ".author__avatar.__n1",
+        "fileName": "nicolelily_academic_site_About_Page_4_author__avatar__n1_0_mobile.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_0_body_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_0_body_1_tablet.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_About_Page_0_body_1_tablet.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_1_page__hero_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_1_page__hero_1_tablet.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_About_Page_1_page__hero_1_tablet.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_2_page__content_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_2_page__content_1_tablet.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_About_Page_2_page__content_1_tablet.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_3_author__avatar_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_3_author__avatar_1_tablet.png",
+        "selector": ".author__avatar",
+        "fileName": "nicolelily_academic_site_About_Page_3_author__avatar_1_tablet.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_4_author__avatar__n1_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_4_author__avatar__n1_1_tablet.png",
+        "selector": ".author__avatar.__n1",
+        "fileName": "nicolelily_academic_site_About_Page_4_author__avatar__n1_1_tablet.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_0_body_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_0_body_2_desktop.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_About_Page_0_body_2_desktop.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_1_page__hero_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_1_page__hero_2_desktop.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_About_Page_1_page__hero_2_desktop.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_2_page__content_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_2_page__content_2_desktop.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_About_Page_2_page__content_2_desktop.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_3_author__avatar_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_3_author__avatar_2_desktop.png",
+        "selector": ".author__avatar",
+        "fileName": "nicolelily_academic_site_About_Page_3_author__avatar_2_desktop.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_4_author__avatar__n1_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_4_author__avatar__n1_2_desktop.png",
+        "selector": ".author__avatar.__n1",
+        "fileName": "nicolelily_academic_site_About_Page_4_author__avatar__n1_2_desktop.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_0_body_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_0_body_3_wide.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_About_Page_0_body_3_wide.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_1_page__hero_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_1_page__hero_3_wide.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_About_Page_1_page__hero_3_wide.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_2_page__content_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_2_page__content_3_wide.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_About_Page_2_page__content_3_wide.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_3_author__avatar_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_3_author__avatar_3_wide.png",
+        "selector": ".author__avatar",
+        "fileName": "nicolelily_academic_site_About_Page_3_author__avatar_3_wide.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_About_Page_4_author__avatar__n1_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_About_Page_4_author__avatar__n1_3_wide.png",
+        "selector": ".author__avatar.__n1",
+        "fileName": "nicolelily_academic_site_About_Page_4_author__avatar__n1_3_wide.png",
+        "label": "About Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/about/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_0_body_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_0_body_0_mobile.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Publications_Page_0_body_0_mobile.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_1_page__hero_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_1_page__hero_0_mobile.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Publications_Page_1_page__hero_0_mobile.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_2_page__content_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_2_page__content_0_mobile.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Publications_Page_2_page__content_0_mobile.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_3_publication-list_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_3_publication-list_0_mobile.png",
+        "selector": ".publication-list",
+        "fileName": "nicolelily_academic_site_Publications_Page_3_publication-list_0_mobile.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_0_body_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_0_body_1_tablet.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Publications_Page_0_body_1_tablet.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_1_page__hero_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_1_page__hero_1_tablet.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Publications_Page_1_page__hero_1_tablet.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_2_page__content_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_2_page__content_1_tablet.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Publications_Page_2_page__content_1_tablet.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_3_publication-list_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_3_publication-list_1_tablet.png",
+        "selector": ".publication-list",
+        "fileName": "nicolelily_academic_site_Publications_Page_3_publication-list_1_tablet.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_0_body_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_0_body_2_desktop.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Publications_Page_0_body_2_desktop.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_1_page__hero_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_1_page__hero_2_desktop.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Publications_Page_1_page__hero_2_desktop.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_2_page__content_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_2_page__content_2_desktop.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Publications_Page_2_page__content_2_desktop.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_3_publication-list_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_3_publication-list_2_desktop.png",
+        "selector": ".publication-list",
+        "fileName": "nicolelily_academic_site_Publications_Page_3_publication-list_2_desktop.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_0_body_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_0_body_3_wide.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Publications_Page_0_body_3_wide.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_1_page__hero_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_1_page__hero_3_wide.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Publications_Page_1_page__hero_3_wide.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_2_page__content_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_2_page__content_3_wide.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Publications_Page_2_page__content_3_wide.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Publications_Page_3_publication-list_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Publications_Page_3_publication-list_3_wide.png",
+        "selector": ".publication-list",
+        "fileName": "nicolelily_academic_site_Publications_Page_3_publication-list_3_wide.png",
+        "label": "Publications Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/publications/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_0_body_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_0_body_0_mobile.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_0_body_0_mobile.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_1_page__hero_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_1_page__hero_0_mobile.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_1_page__hero_0_mobile.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_2_page__content_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_2_page__content_0_mobile.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_2_page__content_0_mobile.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_0_mobile.png",
+        "selector": ".portfolio-grid",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_0_mobile.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_0_body_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_0_body_1_tablet.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_0_body_1_tablet.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_1_page__hero_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_1_page__hero_1_tablet.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_1_page__hero_1_tablet.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_2_page__content_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_2_page__content_1_tablet.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_2_page__content_1_tablet.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_1_tablet.png",
+        "selector": ".portfolio-grid",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_1_tablet.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_0_body_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_0_body_2_desktop.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_0_body_2_desktop.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_1_page__hero_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_1_page__hero_2_desktop.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_1_page__hero_2_desktop.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_2_page__content_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_2_page__content_2_desktop.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_2_page__content_2_desktop.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_2_desktop.png",
+        "selector": ".portfolio-grid",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_2_desktop.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_0_body_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_0_body_3_wide.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_0_body_3_wide.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_1_page__hero_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_1_page__hero_3_wide.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_1_page__hero_3_wide.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_2_page__content_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_2_page__content_3_wide.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_2_page__content_3_wide.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_3_wide.png",
+        "selector": ".portfolio-grid",
+        "fileName": "nicolelily_academic_site_Portfolio_Page_3_portfolio-grid_3_wide.png",
+        "label": "Portfolio Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/portfolio/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_0_body_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_0_body_0_mobile.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Teaching_Page_0_body_0_mobile.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_1_page__hero_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_1_page__hero_0_mobile.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Teaching_Page_1_page__hero_0_mobile.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_2_page__content_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_2_page__content_0_mobile.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Teaching_Page_2_page__content_0_mobile.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_3_teaching-list_0_mobile.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_3_teaching-list_0_mobile.png",
+        "selector": ".teaching-list",
+        "fileName": "nicolelily_academic_site_Teaching_Page_3_teaching-list_0_mobile.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_0_body_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_0_body_1_tablet.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Teaching_Page_0_body_1_tablet.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_1_page__hero_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_1_page__hero_1_tablet.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Teaching_Page_1_page__hero_1_tablet.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_2_page__content_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_2_page__content_1_tablet.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Teaching_Page_2_page__content_1_tablet.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_3_teaching-list_1_tablet.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_3_teaching-list_1_tablet.png",
+        "selector": ".teaching-list",
+        "fileName": "nicolelily_academic_site_Teaching_Page_3_teaching-list_1_tablet.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_0_body_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_0_body_2_desktop.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Teaching_Page_0_body_2_desktop.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_1_page__hero_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_1_page__hero_2_desktop.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Teaching_Page_1_page__hero_2_desktop.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_2_page__content_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_2_page__content_2_desktop.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Teaching_Page_2_page__content_2_desktop.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_3_teaching-list_2_desktop.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_3_teaching-list_2_desktop.png",
+        "selector": ".teaching-list",
+        "fileName": "nicolelily_academic_site_Teaching_Page_3_teaching-list_2_desktop.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_0_body_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_0_body_3_wide.png",
+        "selector": "body",
+        "fileName": "nicolelily_academic_site_Teaching_Page_0_body_3_wide.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_1_page__hero_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_1_page__hero_3_wide.png",
+        "selector": ".page__hero",
+        "fileName": "nicolelily_academic_site_Teaching_Page_1_page__hero_3_wide.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_2_page__content_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_2_page__content_3_wide.png",
+        "selector": ".page__content",
+        "fileName": "nicolelily_academic_site_Teaching_Page_2_page__content_3_wide.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/nicolelily_academic_site_Teaching_Page_3_teaching-list_3_wide.png",
+        "test": "../bitmaps_test/20250827-235013/nicolelily_academic_site_Teaching_Page_3_teaching-list_3_wide.png",
+        "selector": ".teaching-list",
+        "fileName": "nicolelily_academic_site_Teaching_Page_3_teaching-list_3_wide.png",
+        "label": "Teaching Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://nicolelily.github.io/teaching/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "wide",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    }
+  ],
+  "id": "nicolelily_academic_site"
+}
