@@ -1,16 +1,35 @@
----
-layout: archive
-title: "Media"
-permalink: /talks/
-author_profile: true
----
+--- layout: archive title: "Media" permalink: /talks/ author_profile: true ---
+## 🎥 YouTube Videos
 
-{% if site.talkmap_link == true %}
+<div class="youtube-video-container">
+  <div class="video-item">
+    <h3>Panel Discussion: Data Visualization in Healthcare</h3>
+    <p><em>Healthcare Analytics Summit 2024</em></p>
+    <div class="video-wrapper">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="Data Visualization in Healthcare Panel Discussion"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+    <p class="video-description">
+      I participated in this panel discussion about the future of data
+      visualization in healthcare, sharing insights on how visual analytics can
+      improve patient outcomes and healthcare decision-making.
+    </p>
+  </div>
+</div>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+## 🎤 Talks and Presentations {% if site.talkmap_link == true %}
 
-{% endif %}
+<p style="text-decoration: underline">
+  <a href="/talkmap.html">See a map of all the places I've given a talk!</a>
+</p>
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+{% endif %} {% for post in site.talks reversed %} {% include
+archive-single-talk.html %} {% endfor %}
