@@ -1,0 +1,249 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Publications - Nicole Lily">
+  <Navigation />
+  
+  <main class="pt-24">
+    <!-- Publications Header -->
+    <section class="section-padding bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            Publications & Research
+          </h1>
+          <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+            Academic contributions to data science, machine learning, and related fields through peer-reviewed publications and conference presentations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journal Articles -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Journal Articles</h2>
+        
+        <div class="space-y-8">
+          <article class="card p-6">
+            <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Data-Driven Insights in Modern Analytics: A Comprehensive Framework for Complex Dataset Analysis
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                  <strong>Nicole Lily</strong>, Dr. Jane Smith, Dr. Robert Johnson
+                </p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">
+                  <em>Journal of Data Science</em>, Vol. 15, No. 3, pp. 245-267, 2024
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  This paper presents a novel framework for analyzing complex datasets using advanced statistical methods and machine learning techniques. We demonstrate significant improvements in prediction accuracy and interpretability across multiple domains including healthcare, finance, and social sciences.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Machine Learning</span>
+                  <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Statistical Analysis</span>
+                  <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm">Data Visualization</span>
+                </div>
+              </div>
+              <div class="lg:ml-6 flex flex-col gap-2">
+                <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm text-center">
+                  Peer Reviewed
+                </span>
+                <a href="#" class="btn-primary text-center text-sm">View PDF</a>
+                <a href="#" class="btn-secondary text-center text-sm">Cite</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card p-6">
+            <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Predictive Analytics in Healthcare: Machine Learning Approaches for Patient Outcome Prediction
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                  Dr. Michael Chen, <strong>Nicole Lily</strong>, Dr. Sarah Williams
+                </p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">
+                  <em>Healthcare Analytics Quarterly</em>, Vol. 8, No. 2, pp. 112-128, 2024
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  We explore the application of various machine learning algorithms for predicting patient outcomes in clinical settings. Our study demonstrates the effectiveness of ensemble methods in improving diagnostic accuracy while maintaining interpretability for healthcare professionals.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-sm">Healthcare</span>
+                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Predictive Modeling</span>
+                  <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">Ensemble Methods</span>
+                </div>
+              </div>
+              <div class="lg:ml-6 flex flex-col gap-2">
+                <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm text-center">
+                  Peer Reviewed
+                </span>
+                <a href="#" class="btn-primary text-center text-sm">View PDF</a>
+                <a href="#" class="btn-secondary text-center text-sm">Cite</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conference Papers -->
+    <section class="section-padding bg-gray-50 dark:bg-gray-800">
+      <div class="container">
+        <h2 class="section-title">Conference Papers</h2>
+        
+        <div class="space-y-8">
+          <article class="card p-6">
+            <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Machine Learning Applications in Real-World Scenarios: Challenges and Solutions
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                  <strong>Nicole Lily</strong>, Dr. Alex Thompson
+                </p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">
+                  <em>Proceedings of the International Conference on Data Science and Machine Learning</em>, pp. 89-96, 2024
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  This paper addresses common challenges faced when deploying machine learning models in production environments. We present practical solutions and best practices based on real-world case studies from various industries.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm">MLOps</span>
+                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Production ML</span>
+                  <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Best Practices</span>
+                </div>
+              </div>
+              <div class="lg:ml-6 flex flex-col gap-2">
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm text-center">
+                  Conference
+                </span>
+                <a href="#" class="btn-primary text-center text-sm">View PDF</a>
+                <a href="#" class="btn-secondary text-center text-sm">Slides</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card p-6">
+            <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Interactive Data Visualization: Bridging the Gap Between Data and Decision Making
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                  <strong>Nicole Lily</strong>, Dr. Emily Rodriguez
+                </p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">
+                  <em>IEEE Conference on Visualization and Computer Graphics</em>, pp. 156-163, 2024
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  We present novel techniques for creating interactive data visualizations that enhance user engagement and improve decision-making processes. Our approach combines advanced visualization methods with user experience design principles.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm">Data Visualization</span>
+                  <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 rounded-full text-sm">Interactive Design</span>
+                  <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">UX Research</span>
+                </div>
+              </div>
+              <div class="lg:ml-6 flex flex-col gap-2">
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm text-center">
+                  Conference
+                </span>
+                <a href="#" class="btn-primary text-center text-sm">View PDF</a>
+                <a href="#" class="btn-secondary text-center text-sm">Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Working Papers -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Working Papers & Preprints</h2>
+        
+        <div class="space-y-8">
+          <article class="card p-6">
+            <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Deep Learning Approaches for Time Series Forecasting in Financial Markets
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                  <strong>Nicole Lily</strong>, Dr. David Park, Dr. Lisa Chen
+                </p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">
+                  <em>Under Review</em> - Submitted to Journal of Financial Data Science, 2024
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  This research investigates the application of advanced deep learning architectures for predicting financial market trends. We compare various neural network approaches and propose a novel hybrid model that combines LSTM and Transformer architectures.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">Deep Learning</span>
+                  <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Time Series</span>
+                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Finance</span>
+                </div>
+              </div>
+              <div class="lg:ml-6 flex flex-col gap-2">
+                <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm text-center">
+                  Under Review
+                </span>
+                <a href="#" class="btn-secondary text-center text-sm">Preprint</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Metrics -->
+    <section class="section-padding bg-gray-50 dark:bg-gray-800">
+      <div class="container">
+        <h2 class="section-title text-center">Research Impact</h2>
+        
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="card p-6 text-center">
+            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">12</div>
+            <div class="text-gray-600 dark:text-gray-300">Publications</div>
+          </div>
+          <div class="card p-6 text-center">
+            <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">156</div>
+            <div class="text-gray-600 dark:text-gray-300">Citations</div>
+          </div>
+          <div class="card p-6 text-center">
+            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">8</div>
+            <div class="text-gray-600 dark:text-gray-300">Conference Talks</div>
+          </div>
+          <div class="card p-6 text-center">
+            <div class="text-3xl font-bold text-red-600 dark:text-red-400 mb-2">4.2</div>
+            <div class="text-gray-600 dark:text-gray-300">H-Index</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaboration -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Research Collaboration</h2>
+          <p class="section-subtitle mx-auto">
+            Interested in collaborating on research projects or have questions about my work? I'm always open to discussing new opportunities and partnerships.
+          </p>
+          <div class="flex justify-center gap-4">
+            <a href="/contact" class="btn-primary">Get In Touch</a>
+            <a href="/cv" class="btn-secondary">View Full CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+

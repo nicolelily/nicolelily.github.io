@@ -1,0 +1,432 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Media & Speaking - Nicole Lily">
+  <Navigation />
+  
+  <main class="pt-24">
+    <!-- Media Header -->
+    <section class="section-padding bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            Media & Speaking
+          </h1>
+          <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+            Podcast appearances, conference talks, and panel discussions where I share insights on data science, machine learning, and the future of technology.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Highlights -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">Recent Highlights</h2>
+        
+        <div class="grid lg:grid-cols-2 gap-12 mb-16">
+          <div class="card overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center relative">
+              <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+              <div class="relative z-10 text-center text-white">
+                <div class="text-5xl mb-2">🎙️</div>
+                <h3 class="text-xl font-semibold">Featured Podcast</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                Data Science Weekly Podcast
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                In-depth discussion about the latest trends in machine learning, ethical AI, and the future of data science education. We explored practical applications and challenges in deploying ML models in production environments.
+              </p>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm text-gray-500 dark:text-gray-400">Episode #247 • March 2024</span>
+                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm">45 min</span>
+              </div>
+              <div class="flex gap-3">
+                <a href="#" class="btn-primary flex-1 text-center">Listen Now</a>
+                <a href="#" class="btn-secondary">Transcript</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-blue-500 to-teal-500 flex items-center justify-center relative">
+              <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+              <div class="relative z-10 text-center text-white">
+                <div class="text-5xl mb-2">🎯</div>
+                <h3 class="text-xl font-semibold">Keynote Talk</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                Data Science Conference 2024
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Keynote presentation on "The Future of Interactive Data Visualization" exploring emerging technologies, user experience design principles, and the democratization of data insights through intuitive interfaces.
+              </p>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm text-gray-500 dark:text-gray-400">San Francisco • February 2024</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Keynote</span>
+              </div>
+              <div class="flex gap-3">
+                <a href="#" class="btn-primary flex-1 text-center">Watch Video</a>
+                <a href="#" class="btn-secondary">Slides</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Podcast Appearances -->
+    <section class="section-padding bg-gray-50 dark:bg-gray-800">
+      <div class="container">
+        <h2 class="section-title">Podcast Appearances</h2>
+        
+        <div class="space-y-6">
+          <div class="card p-6">
+            <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+              <div class="lg:w-24 lg:h-24 w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span class="text-white text-2xl lg:text-3xl">🎧</span>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Data Science Weekly Podcast - "The Future of ML in Healthcare"
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                  Discussed the applications of machine learning in healthcare, focusing on predictive analytics, patient outcome modeling, and the importance of interpretable AI in clinical decision-making.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+                  <span>Episode #247</span>
+                  <span>•</span>
+                  <span>March 15, 2024</span>
+                  <span>•</span>
+                  <span>45 minutes</span>
+                  <span>•</span>
+                  <span class="text-green-600 dark:text-green-400">12K+ downloads</span>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <a href="#" class="btn-primary">Listen</a>
+                <a href="#" class="btn-secondary">Transcript</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card p-6">
+            <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+              <div class="lg:w-24 lg:h-24 w-16 h-16 bg-gradient-to-br from-green-400 to-teal-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span class="text-white text-2xl lg:text-3xl">🎧</span>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Tech Talk Tuesday - "Building Effective Data Visualization Tools"
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                  Explored the principles of effective data visualization, user experience design for data tools, and practical tips for creating visualizations that drive actionable insights.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+                  <span>Episode #89</span>
+                  <span>•</span>
+                  <span>February 28, 2024</span>
+                  <span>•</span>
+                  <span>38 minutes</span>
+                  <span>•</span>
+                  <span class="text-green-600 dark:text-green-400">8K+ downloads</span>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <a href="#" class="btn-primary">Listen</a>
+                <a href="#" class="btn-secondary">Show Notes</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card p-6">
+            <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+              <div class="lg:w-24 lg:h-24 w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span class="text-white text-2xl lg:text-3xl">🎧</span>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  The AI Podcast - "Ethics in Machine Learning Research"
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                  Deep dive into ethical considerations in AI research, discussing bias mitigation, fairness in algorithms, and the responsibility of data scientists in creating equitable AI systems.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+                  <span>Episode #156</span>
+                  <span>•</span>
+                  <span>January 20, 2024</span>
+                  <span>•</span>
+                  <span>52 minutes</span>
+                  <span>•</span>
+                  <span class="text-green-600 dark:text-green-400">15K+ downloads</span>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <a href="#" class="btn-primary">Listen</a>
+                <a href="#" class="btn-secondary">Resources</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conference Talks -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Conference Talks & Presentations</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="card overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center relative">
+              <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+              <div class="relative z-10 text-center text-white">
+                <div class="text-4xl mb-2">🎯</div>
+                <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-sm">Keynote</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                The Future of Interactive Data Visualization
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Keynote presentation exploring emerging trends in data visualization, the role of AI in automated chart generation, and designing for accessibility and inclusion.
+              </p>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm text-gray-500 dark:text-gray-400">Data Science Conference 2024</span>
+                <span class="text-sm text-gray-500 dark:text-gray-400">San Francisco</span>
+              </div>
+              <div class="flex gap-3">
+                <a href="#" class="btn-primary flex-1 text-center">Watch Video</a>
+                <a href="#" class="btn-secondary">Slides</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center relative">
+              <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+              <div class="relative z-10 text-center text-white">
+                <div class="text-4xl mb-2">🤝</div>
+                <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-sm">Panel</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                Ethics in Machine Learning Applications
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Panel discussion on responsible AI development, addressing algorithmic bias, transparency in ML models, and the societal impact of automated decision-making systems.
+              </p>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm text-gray-500 dark:text-gray-400">ML Summit 2024</span>
+                <span class="text-sm text-gray-500 dark:text-gray-400">New York</span>
+              </div>
+              <div class="flex gap-3">
+                <a href="#" class="btn-primary flex-1 text-center">Watch Panel</a>
+                <a href="#" class="btn-secondary">Summary</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center relative">
+              <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+              <div class="relative z-10 text-center text-white">
+                <div class="text-4xl mb-2">🔬</div>
+                <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-sm">Research</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                Federated Learning in Healthcare
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Technical presentation on federated learning approaches for healthcare data, discussing privacy-preserving machine learning and collaborative model training.
+              </p>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm text-gray-500 dark:text-gray-400">Healthcare AI Conference</span>
+                <span class="text-sm text-gray-500 dark:text-gray-400">Boston</span>
+              </div>
+              <div class="flex gap-3">
+                <a href="#" class="btn-primary flex-1 text-center">View Paper</a>
+                <a href="#" class="btn-secondary">Slides</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center relative">
+              <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+              <div class="relative z-10 text-center text-white">
+                <div class="text-4xl mb-2">🎓</div>
+                <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-sm">Workshop</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                Hands-on Data Visualization with D3.js
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Interactive workshop teaching advanced data visualization techniques using D3.js, covering animation, interaction design, and responsive visualization principles.
+              </p>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm text-gray-500 dark:text-gray-400">PyData Conference</span>
+                <span class="text-sm text-gray-500 dark:text-gray-400">Chicago</span>
+              </div>
+              <div class="flex gap-3">
+                <a href="#" class="btn-primary flex-1 text-center">Materials</a>
+                <a href="#" class="btn-secondary">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media Coverage -->
+    <section class="section-padding bg-gray-50 dark:bg-gray-800">
+      <div class="container">
+        <h2 class="section-title">Media Coverage & Features</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="card p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-blue-600 dark:text-blue-400 text-xl">📰</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-900 dark:text-white">TechCrunch</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">March 2024</p>
+              </div>
+            </div>
+            <h4 class="font-medium mb-2">"Rising Stars in Data Science"</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+              Featured as one of the top emerging data scientists making significant contributions to healthcare analytics and AI ethics.
+            </p>
+            <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline text-sm">Read Article →</a>
+          </div>
+
+          <div class="card p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-green-600 dark:text-green-400 text-xl">📺</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-900 dark:text-white">Data Science Today</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">February 2024</p>
+              </div>
+            </div>
+            <h4 class="font-medium mb-2">"The Future of Data Visualization"</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+              Interview discussing the evolution of data visualization tools and the importance of user-centered design in analytics platforms.
+            </p>
+            <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline text-sm">Watch Interview →</a>
+          </div>
+
+          <div class="card p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-purple-600 dark:text-purple-400 text-xl">🎙️</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-900 dark:text-white">AI Weekly</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">January 2024</p>
+              </div>
+            </div>
+            <h4 class="font-medium mb-2">"Graduate Student Spotlight"</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+              Profile highlighting research contributions and innovative approaches to machine learning in healthcare applications.
+            </p>
+            <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline text-sm">Read Profile →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speaking Topics -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">Speaking Topics</h2>
+        <p class="section-subtitle text-center mx-auto">
+          I'm available for speaking engagements on a variety of topics related to data science, machine learning, and technology.
+        </p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card p-6 text-center">
+            <div class="text-4xl mb-4">🤖</div>
+            <h3 class="text-lg font-semibold mb-2">Machine Learning Ethics</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+              Responsible AI development, bias mitigation, and fairness in algorithmic decision-making.
+            </p>
+          </div>
+
+          <div class="card p-6 text-center">
+            <div class="text-4xl mb-4">📊</div>
+            <h3 class="text-lg font-semibold mb-2">Data Visualization</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+              Design principles, interactive visualizations, and storytelling with data.
+            </p>
+          </div>
+
+          <div class="card p-6 text-center">
+            <div class="text-4xl mb-4">🏥</div>
+            <h3 class="text-lg font-semibold mb-2">Healthcare Analytics</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+              ML applications in healthcare, predictive modeling, and clinical decision support.
+            </p>
+          </div>
+
+          <div class="card p-6 text-center">
+            <div class="text-4xl mb-4">🎓</div>
+            <h3 class="text-lg font-semibold mb-2">Data Science Education</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+              Teaching methodologies, curriculum design, and bridging theory with practice.
+            </p>
+          </div>
+
+          <div class="card p-6 text-center">
+            <div class="text-4xl mb-4">🔒</div>
+            <h3 class="text-lg font-semibold mb-2">Privacy & Security</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+              Federated learning, differential privacy, and secure multi-party computation.
+            </p>
+          </div>
+
+          <div class="card p-6 text-center">
+            <div class="text-4xl mb-4">🚀</div>
+            <h3 class="text-lg font-semibold mb-2">Career Development</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+              Breaking into data science, graduate school advice, and building a research career.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact for Speaking -->
+    <section class="section-padding bg-gray-50 dark:bg-gray-800">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Interested in Having Me Speak?</h2>
+          <p class="section-subtitle mx-auto">
+            I'm always excited to share knowledge and engage with audiences at conferences, workshops, podcasts, and corporate events.
+          </p>
+          <div class="flex justify-center gap-4">
+            <a href="/contact" class="btn-primary">Book Speaking Engagement</a>
+            <a href="#" class="btn-secondary">Download Speaker Kit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
