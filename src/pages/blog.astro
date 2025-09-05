@@ -1,0 +1,210 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+
+// Get all blog posts and sort by date
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Get unique tags
+const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
+---
+
+<Layout title="Blog - Nicole Lily">
+  <Navigation />
+  
+  <main class="pt-24">
+    <!-- Blog Header -->
+    <section class="section-padding bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            Blog
+          </h1>
+          <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+            Thoughts, tutorials, and insights on data science, machine learning, and the intersection of technology and society.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tags Filter -->
+    <section class="section-padding bg-gray-50 dark:bg-gray-800">
+      <div class="container">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-semibold mb-4">Filter by Topic</h2>
+          <div class="flex flex-wrap justify-center gap-3">
+            <button class="filter-tag active px-4 py-2 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-700 transition-colors" data-tag="all">
+              All Posts
+            </button>
+            {allTags.map(tag => (
+              <button class="filter-tag px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-tag={tag}>
+                {tag}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="posts-grid">
+          {sortedPosts.map((post) => (
+            <article class="card overflow-hidden post-item" data-tags={JSON.stringify(post.data.tags)}>
+              <div class="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center relative">
+                <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                <div class="relative z-10 text-center text-white">
+                  <div class="text-4xl mb-2">📝</div>
+                  <div class="text-sm opacity-90">
+                    {post.data.pubDate.toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </div>
+                </div>
+              </div>
+              <div class="p-6">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                  <a href={`/blog/${post.slug}`} class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    {post.data.title}
+                  </a>
+                </h2>
+                <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                  {post.data.description}
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  {post.data.tags.slice(0, 3).map(tag => (
+                    <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-xs">
+                      {tag}
+                    </span>
+                  ))}
+                  {post.data.tags.length > 3 && (
+                    <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded text-xs">
+                      +{post.data.tags.length - 3} more
+                    </span>
+                  )}
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm text-gray-500 dark:text-gray-400">
+                    By {post.data.author}
+                  </span>
+                  <a href={`/blog/${post.slug}`} class="text-blue-600 dark:text-blue-400 hover:underline text-sm">
+                    Read more →
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section-padding bg-gray-50 dark:bg-gray-800">
+      <div class="container">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="section-title">Stay Updated</h2>
+          <p class="section-subtitle">
+            Get notified when I publish new articles about data science, machine learning, and technology trends.
+          </p>
+          <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input 
+              type="email" 
+              placeholder="Enter your email" 
+              class="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              required
+            >
+            <button type="submit" class="btn-primary whitespace-nowrap">
+              Subscribe
+            </button>
+          </form>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+            No spam, unsubscribe at any time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Archive -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Explore More</h2>
+          <p class="section-subtitle mx-auto">
+            Looking for something specific? Browse by category or check out my other content.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="/portfolio" class="btn-secondary">View Portfolio</a>
+            <a href="/publications" class="btn-secondary">Academic Publications</a>
+            <a href="/media" class="btn-secondary">Media & Speaking</a>
+            <a href="/contact" class="btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Blog post filtering functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterTags = document.querySelectorAll('.filter-tag');
+      const postItems = document.querySelectorAll('.post-item');
+
+      filterTags.forEach(tag => {
+        tag.addEventListener('click', function() {
+          const selectedTag = this.getAttribute('data-tag');
+          
+          // Update active tag
+          filterTags.forEach(t => {
+            t.classList.remove('active', 'bg-blue-600', 'text-white');
+            t.classList.add('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+          });
+          
+          this.classList.add('active', 'bg-blue-600', 'text-white');
+          this.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+
+          // Filter posts
+          postItems.forEach(post => {
+            const postTags = JSON.parse(post.getAttribute('data-tags'));
+            
+            if (selectedTag === 'all' || postTags.includes(selectedTag)) {
+              post.style.display = 'block';
+            } else {
+              post.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Newsletter form handling
+      const newsletterForm = document.querySelector('form');
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const email = this.querySelector('input[type="email"]').value;
+          
+          // Here you would typically send the email to your newsletter service
+          alert('Thanks for subscribing! (This is a demo - no actual subscription was created)');
+          this.reset();
+        });
+      }
+    });
+  </script>
+
+  <style>
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</Layout>
+
