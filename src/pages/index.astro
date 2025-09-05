@@ -35,44 +35,72 @@ import '../styles/global.css';
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section-padding">
-    <div class="container">
-      <h2 class="section-title text-center">About Me</h2>
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <p class="text-gray-600 dark:text-gray-300 mb-6">
-          I live and work in coastal Delaware with my family and the love of my life, my dog [Potato](https://www.instagram.com/pittie_potato/). 
-          I'm currently pursuing my Master's degree while working on cutting-edge data science projects in the healthcare and biotechnology sectors. My passion lies in creating beautiful data visualizations, building interactive applications, 
-          and conducting meaningful research that drives real-world impact.
-          </p>
-          <p class="text-gray-600 dark:text-gray-300 mb-6">
-            When I'm not coding or analyzing data, I enjoy exploring southern Delaware and Maryland's Eastern Shore, reading, writing, and spending time with my family and friends. 
-          </p>
-          <div class="flex flex-wrap gap-3">
-            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Python</span>
-            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">R</span>
-            <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm">Machine Learning</span>
-            <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">Data Visualization</span>
-            <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-sm">Web Development</span>
-          </div>
+  <<!-- About Section -->
+<section id="about" class="section-padding">
+  <div class="container">
+    <h2 class="section-title text-center">About Me</h2>
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <div class="card p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="text-2xl">🏠</span>
+          <h3 class="text-xl font-semibold">Personal Background</h3>
         </div>
-        <div class="space-y-6">
-          <div class="card p-6">
-            <h3 class="text-xl font-semibold mb-2">🎓 Current Academic Work</h3>
-            <p class="text-gray-600 dark:text-gray-300">Master's degree in progress at the University of Colorado Boulder. I'm focused on data ethics, societal impacts of artificial intelligence, and information design for public health, healthcare, and social justice.</p>
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+          I live and work in coastal Delaware with my family and the love of my life, my dog 
+          <a href="https://www.instagram.com/pittie_potato/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Potato</a>. 
+          I'm currently pursuing my Master's degree while working on cutting-edge data science projects in the 
+          healthcare and biotechnology sectors.
+        </p>
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+          My passion lies in creating beautiful data visualizations, building interactive applications, and 
+          conducting meaningful research that drives real-world impact.
+        </p>
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+          When I'm not coding or analyzing data, I enjoy exploring southern Delaware and Maryland's Eastern Shore, 
+          reading, writing, and spending time with my family and friends.
+        </p>
+        
+        <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xl">🛠️</span>
+            <h4 class="text-lg font-medium">Skills & Technologies</h4>
           </div>
-          <div class="card p-6">
-            <h3 class="text-xl font-semibold mb-2">📊 Data Visualization</h3>
-            <p class="text-gray-600 dark:text-gray-300">Creating compelling visual stories from complex datasets using modern tools and techniques. I'm particularly interested in using data visualization to tell stories that are informative, engaging, and inspire the reader to take action..</p>
-          </div>
-          <div class="card p-6">
-            <h3 class="text-xl font-semibold mb-2">🚀 App Development</h3>
-            <p class="text-gray-600 dark:text-gray-300">Building interactive web applications and data tools that solve real-world problems.</p>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">Python</span>
+            <span class="px-4 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm font-medium">R</span>
+            <span class="px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm font-medium">Machine Learning</span>
+            <span class="px-4 py-2 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm font-medium">Data Visualization</span>
+            <span class="px-4 py-2 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-sm font-medium">Web Development</span>
           </div>
         </div>
       </div>
+      <div class="space-y-6">
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">🎓</span>
+            <h3 class="text-xl font-semibold">Current Academic Work</h3>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 mb-2 font-medium">Master's degree in progress at the University of Colorado Boulder.</p>
+          <p class="text-gray-600 dark:text-gray-300">I'm focused on data ethics, societal impacts of artificial intelligence, and information design for public health, healthcare, and social justice.</p>
+        </div>
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">📊</span>
+            <h3 class="text-xl font-semibold">Data Visualization</h3>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300">Creating compelling visual stories from complex datasets using modern tools and techniques. I'm particularly interested in using data visualization to tell stories that are informative, engaging, and inspire the reader to take action.</p>
+        </div>
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">🚀</span>
+            <h3 class="text-xl font-semibold">App Development</h3>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300">Building interactive web applications and data tools that solve real-world problems.</p>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Research Section -->
   <section id="research" class="section-padding bg-gray-50 dark:bg-gray-800">
