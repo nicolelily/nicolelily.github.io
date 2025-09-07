@@ -173,7 +173,7 @@ src/
 ## Contact Information Integration
 
 The site represents:
-- **Email**: hello@nicoledesignsdata.net
+- **Email**: nicoledesignsdata@pm.me
 - **LinkedIn**: nicole-mark
 - **GitHub**: nicolelily
 - **ORCID**: 0000-0001-8383-274X
