@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
+import logo from '../assets/diverging-bars-logo-no-text.png';
 ---
 
 <Layout title="Nicole L. Mark">
@@ -24,10 +25,12 @@ import '../styles/global.css';
           </div>
         </div>
         <div class="flex-1 flex justify-center">
-          <div class="w-80 h-80 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-full flex items-center justify-center">
-            <div class="w-72 h-72 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center">
-              <span class="text-6xl">👩‍💻</span>
-            </div>
+          <div class="w-80 h-80 flex items-center justify-center">
+            <img 
+              src={logo} 
+              alt="Nicole Mark's Logo - Data Visualization Bars" 
+              class="w-72 h-72 object-contain transition-transform hover:scale-105 duration-300"
+            />
           </div>
         </div>
       </div>
