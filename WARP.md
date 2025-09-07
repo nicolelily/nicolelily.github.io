@@ -87,7 +87,7 @@ src/
 - Schema validation via Zod in `src/content/config.ts`
 - Required frontmatter fields: `title`, `description`, `pubDate`
 - Optional fields: `updatedDate`, `heroImage`, `tags`, `author`, `draft`
-- Author defaults to "Nicole Lily"
+- Author defaults to "Nicole L. Mark"
 
 #### Page Structure
 - **Homepage** (`index.astro`): Hero, About, Research, Portfolio sections

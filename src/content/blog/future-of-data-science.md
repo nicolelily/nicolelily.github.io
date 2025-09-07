@@ -3,7 +3,7 @@ title: "The Future of Data Science: Trends and Technologies Shaping Tomorrow"
 description: "Exploring emerging trends and technologies that are shaping the future of data science and analytics."
 pubDate: 2024-03-05
 tags: ["data science", "future trends", "AI", "technology"]
-author: "Nicole Lily"
+author: "Nicole L. Mark"
 heroImage: "/images/blog/future-ds-hero.jpg"
 ---
 

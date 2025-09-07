@@ -3,7 +3,7 @@ title: "Getting Started with Advanced Data Visualization"
 description: "A comprehensive guide to creating compelling visualizations that tell meaningful stories with your data."
 pubDate: 2024-03-15
 tags: ["data visualization", "d3.js", "python", "tutorial"]
-author: "Nicole Lily"
+author: "Nicole L. Mark"
 heroImage: "/images/blog/data-viz-hero.jpg"
 ---
 

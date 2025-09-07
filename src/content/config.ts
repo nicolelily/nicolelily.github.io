@@ -9,7 +9,7 @@ const blog = defineCollection({
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
     tags: z.array(z.string()).default([]),
-    author: z.string().default('Nicole Lily'),
+    author: z.string().default('Nicole L. Mark'),
     draft: z.boolean().default(false),
   }),
 });

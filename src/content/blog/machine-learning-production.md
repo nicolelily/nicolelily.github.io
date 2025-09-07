@@ -3,7 +3,7 @@ title: "Machine Learning in Production: Best Practices and Lessons Learned"
 description: "Best practices for deploying and maintaining machine learning models in real-world applications."
 pubDate: 2024-03-10
 tags: ["machine learning", "mlops", "production", "deployment"]
-author: "Nicole Lily"
+author: "Nicole L. Mark"
 heroImage: "/images/blog/ml-production-hero.jpg"
 ---
 
