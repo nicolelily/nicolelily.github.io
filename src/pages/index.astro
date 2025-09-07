@@ -357,20 +357,42 @@ import '../styles/global.css';
           
           <div class="card p-6">
             <h3 class="text-xl font-semibold mb-6">Send a Message</h3>
-            <form class="space-y-4">
+            <form 
+              action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" 
+              method="POST" 
+              class="space-y-4" 
+              id="homepage-contact-form"
+            >
+              <!-- Honeypot for spam protection -->
+              <input type="text" name="_gotcha" style="display:none" />
+              
               <div>
-                <label for="name" class="block text-sm font-medium mb-2">Name</label>
-                <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent">
+                <label for="home-name" class="block text-sm font-medium mb-2">Name</label>
+                <input type="text" id="home-name" name="name" required class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent">
               </div>
               <div>
-                <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent">
+                <label for="home-email" class="block text-sm font-medium mb-2">Email</label>
+                <input type="email" id="home-email" name="_replyto" required class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent">
               </div>
               <div>
-                <label for="message" class="block text-sm font-medium mb-2">Message</label>
-                <textarea id="message" rows="4" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"></textarea>
+                <label for="home-message" class="block text-sm font-medium mb-2">Message</label>
+                <textarea id="home-message" name="message" rows="4" required class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"></textarea>
               </div>
-              <button type="submit" class="btn-primary w-full">Send Message</button>
+              
+              <!-- Success/Error Messages -->
+              <div id="home-form-messages" class="hidden">
+                <div id="home-success-message" class="hidden p-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg text-sm">
+                  <span class="text-green-600 dark:text-green-400">✓ Message sent! I'll get back to you soon.</span>
+                </div>
+                <div id="home-error-message" class="hidden p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-sm">
+                  <span class="text-red-600 dark:text-red-400">Something went wrong. Please try the full contact form or email me directly.</span>
+                </div>
+              </div>
+              
+              <button type="submit" id="home-submit-button" class="btn-primary w-full">
+                <span id="home-button-text">Send Message</span>
+                <span id="home-button-loading" class="hidden">Sending...</span>
+              </button>
             </form>
           </div>
         </div>
@@ -396,4 +418,71 @@ import '../styles/global.css';
       </div>
     </div>
   </footer>
+  
+  <script>
+    // Homepage contact form handling
+    document.addEventListener('DOMContentLoaded', function() {
+      const homeForm = document.getElementById('homepage-contact-form');
+      
+      if (homeForm) {
+        const submitButton = document.getElementById('home-submit-button');
+        const buttonText = document.getElementById('home-button-text');
+        const buttonLoading = document.getElementById('home-button-loading');
+        const formMessages = document.getElementById('home-form-messages');
+        const successMessage = document.getElementById('home-success-message');
+        const errorMessage = document.getElementById('home-error-message');
+        
+        homeForm.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+          // Show loading state
+          submitButton.disabled = true;
+          buttonText.classList.add('hidden');
+          buttonLoading.classList.remove('hidden');
+          
+          // Hide any previous messages
+          formMessages.classList.add('hidden');
+          successMessage.classList.add('hidden');
+          errorMessage.classList.add('hidden');
+          
+          try {
+            const formData = new FormData(this);
+            const formAction = this.getAttribute('action');
+            
+            if (formAction.includes('REPLACE_WITH_YOUR_FORM_ID')) {
+              throw new Error('PLACEHOLDER_MODE');
+            }
+            
+            const response = await fetch(formAction, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            });
+            
+            if (response.ok) {
+              formMessages.classList.remove('hidden');
+              successMessage.classList.remove('hidden');
+              this.reset();
+            } else {
+              throw new Error('Form submission failed');
+            }
+            
+          } catch (error) {
+            if (error.message === 'PLACEHOLDER_MODE') {
+              alert('Form setup needed! Please use the full contact page or email me directly at hello@nicoledesignsdata.net');
+            } else {
+              formMessages.classList.remove('hidden');
+              errorMessage.classList.remove('hidden');
+            }
+          } finally {
+            submitButton.disabled = false;
+            buttonText.classList.remove('hidden');
+            buttonLoading.classList.add('hidden');
+          }
+        });
+      }
+    });
+  </script>
 </Layout>
