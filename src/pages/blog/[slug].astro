@@ -215,11 +215,22 @@ const relatedPosts = allPosts
 
     /* Custom prose styles for better readability */
     .prose {
-      color: rgb(55 65 81);
+      color: rgb(75 85 99); /* Improved contrast - gray-600 instead of gray-700 */
     }
 
     .dark .prose {
-      color: rgb(209 213 219);
+      color: rgb(229 231 235); /* Better contrast in dark mode - gray-200 instead of gray-300 */
+    }
+    
+    /* Improve paragraph text specifically */
+    .prose p {
+      color: rgb(107 114 128); /* gray-500 for body text */
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+    }
+    
+    .dark .prose p {
+      color: rgb(209 213 219); /* gray-300 for dark mode */
     }
 
     .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {

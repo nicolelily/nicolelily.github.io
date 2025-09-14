@@ -30,6 +30,7 @@ const { title, description = "Nicole L, Mark - Data Scientist, Information Desig
       function initTheme() {
         const theme = localStorage.getItem('theme') || 'light';
         document.documentElement.classList.toggle('dark', theme === 'dark');
+        updateThemeIcons();
       }
       
       function toggleTheme() {
@@ -37,13 +38,33 @@ const { title, description = "Nicole L, Mark - Data Scientist, Information Desig
         const newTheme = isDark ? 'light' : 'dark';
         document.documentElement.classList.toggle('dark', newTheme === 'dark');
         localStorage.setItem('theme', newTheme);
+        updateThemeIcons();
+      }
+      
+      function updateThemeIcons() {
+        const isDark = document.documentElement.classList.contains('dark');
+        const sunIcon = document.getElementById('sun-icon');
+        const moonIcon = document.getElementById('moon-icon');
+        
+        if (sunIcon && moonIcon) {
+          if (isDark) {
+            // Dark mode - show sun icon (to switch to light)
+            sunIcon.classList.remove('hidden');
+            moonIcon.classList.add('hidden');
+          } else {
+            // Light mode - show moon icon (to switch to dark)
+            sunIcon.classList.add('hidden');
+            moonIcon.classList.remove('hidden');
+          }
+        }
       }
       
       // Initialize theme on page load
       initTheme();
       
-      // Make toggle function globally available
+      // Make functions globally available
       window.toggleTheme = toggleTheme;
+      window.updateThemeIcons = updateThemeIcons;
     </script>
   </body>
 </html>
