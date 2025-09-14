@@ -25,46 +25,67 @@ const { title, description = "Nicole L, Mark - Data Scientist, Information Desig
   <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans antialiased">
     <slot />
     
-    <script>
-      // Dark mode toggle functionality
-      function initTheme() {
-        const theme = localStorage.getItem('theme') || 'light';
-        document.documentElement.classList.toggle('dark', theme === 'dark');
-        updateThemeIcons();
-      }
-      
-      function toggleTheme() {
-        const isDark = document.documentElement.classList.contains('dark');
-        const newTheme = isDark ? 'light' : 'dark';
-        document.documentElement.classList.toggle('dark', newTheme === 'dark');
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcons();
-      }
-      
-      function updateThemeIcons() {
-        const isDark = document.documentElement.classList.contains('dark');
-        const sunIcon = document.getElementById('sun-icon');
-        const moonIcon = document.getElementById('moon-icon');
+    <script is:inline>
+      // Theme management system - runs immediately to prevent FOUC
+      (function() {
+        // Get theme from localStorage or default to light
+        const getStoredTheme = () => localStorage.getItem('theme') || 'light';
+        const isDark = () => document.documentElement.classList.contains('dark');
         
-        if (sunIcon && moonIcon) {
-          if (isDark) {
-            // Dark mode - show sun icon (to switch to light)
-            sunIcon.classList.remove('hidden');
-            moonIcon.classList.add('hidden');
+        // Apply theme to document
+        function setTheme(theme) {
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
           } else {
-            // Light mode - show moon icon (to switch to dark)
-            sunIcon.classList.add('hidden');
-            moonIcon.classList.remove('hidden');
+            document.documentElement.classList.remove('dark');
+          }
+          localStorage.setItem('theme', theme);
+        }
+        
+        // Update theme toggle icons
+        function updateThemeIcons() {
+          const currentlyDark = isDark();
+          const sunIcon = document.getElementById('sun-icon');
+          const moonIcon = document.getElementById('moon-icon');
+          
+          if (sunIcon && moonIcon) {
+            if (currentlyDark) {
+              // Dark mode - show sun icon (to switch to light)
+              sunIcon.style.display = 'block';
+              moonIcon.style.display = 'none';
+            } else {
+              // Light mode - show moon icon (to switch to dark)
+              sunIcon.style.display = 'none';
+              moonIcon.style.display = 'block';
+            }
           }
         }
-      }
-      
-      // Initialize theme on page load
-      initTheme();
-      
-      // Make functions globally available
-      window.toggleTheme = toggleTheme;
-      window.updateThemeIcons = updateThemeIcons;
+        
+        // Toggle theme function
+        function toggleTheme() {
+          const currentTheme = getStoredTheme();
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          setTheme(newTheme);
+          updateThemeIcons();
+          console.log('Theme toggled to:', newTheme); // Debug log
+        }
+        
+        // Initialize theme immediately
+        const initialTheme = getStoredTheme();
+        setTheme(initialTheme);
+        
+        // Make functions globally available
+        window.toggleTheme = toggleTheme;
+        window.updateThemeIcons = updateThemeIcons;
+        window.getStoredTheme = getStoredTheme;
+        
+        // Update icons when DOM is ready
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', updateThemeIcons);
+        } else {
+          updateThemeIcons();
+        }
+      })();
     </script>
   </body>
 </html>
