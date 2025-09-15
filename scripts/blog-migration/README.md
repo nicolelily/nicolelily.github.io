@@ -12,19 +12,19 @@ It converts exports to Markdown with proper frontmatter matching your schema:
 - author: string (defaults to "Nicole L. Mark")
 - draft: boolean (default false)
 
-## 0) Install dependencies (yarn)
+## 0) Install dependencies (npm)
 
 From the repo root:
 
 ```bash
 # required
-yarn add -D gray-matter slugify date-fns
+npm install -D gray-matter slugify date-fns
 
 # used for Medium HTML → Markdown
-yarn add -D jsdom turndown
+npm install -D jsdom turndown
 
 # optional: better description extraction
-yarn add -D @iarna/toml
+npm install -D @iarna/toml
 ```
 
 ## 1) Export your content
@@ -73,7 +73,7 @@ This checks frontmatter presence/types and warns on common issues (missing descr
 3. Run the validator and address warnings.
 4. Preview locally to visually spot-check posts:
    ```bash
-   yarn dev
+   npm run dev
    ```
 5. Commit the imported content in small batches (e.g., 5–10 posts) with descriptive messages.
 6. Open a PR for review, iterate, and merge.

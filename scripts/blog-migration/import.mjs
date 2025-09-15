@@ -115,6 +115,17 @@ function pickDescriptionFromMarkdown(md) {
   return (paras.find(p => p.length > 60) || paras[0] || '').slice(0, 280);
 }
 
+function fixImageSyntax(markdown) {
+  // Fix malformed image-in-link syntax that Turndown sometimes creates
+  // Pattern: [\n\n![alt](url)\n\n\n\n](url) -> ![alt](url)
+  return markdown.replace(
+    /\[\s*\n\s*!\[(.*?)\]\((.*?)\)(?:\s+"(.*?)")?\s*\n\s*\n\s*\n\s*\]\([^)]*\)/g,
+    '![<%= alt_text %>](<%= url %>)'
+      .replace('<%= alt_text %>', '$1')
+      .replace('<%= url %>', '$2')
+  );
+}
+
 function filenameFor({ pubDate, title }) {
   const datePrefix = pubDate ? safeDateString(pubDate) : formatDate(new Date(), 'yyyy-MM-dd');
   return `${datePrefix}--${toSlug(title || 'post')}.md`;
@@ -133,7 +144,7 @@ function writePost({ outDir, fm, body, filename, force }) {
 // Medium import: parse HTML files in <input>/posts
 function importMedium(opts) {
   if (!TurndownService || !JSDOM) {
-    console.error('Medium import requires turndown and jsdom. Install with: yarn add -D turndown jsdom');
+    console.error('Medium import requires turndown and jsdom. Install with: npm install -D turndown jsdom');
     process.exit(1);
   }
   const postsDir = path.join(opts.input, 'posts');
@@ -154,7 +165,8 @@ function importMedium(opts) {
     const timeEl = doc.querySelector('time');
     const pubDate = timeEl?.getAttribute('datetime') || timeEl?.textContent || '';
     const main = doc.querySelector('article') || doc.body;
-    const md = td.turndown(main.innerHTML);
+    let md = td.turndown(main.innerHTML);
+    md = fixImageSyntax(md);
     const description = pickDescriptionFromMarkdown(md);
 
     const fm = buildFrontmatter({
@@ -231,7 +243,7 @@ function importSubstack(opts) {
     if (f.endsWith('.html')) {
       // Handle HTML files (like your Substack export)
       if (!TurndownService || !JSDOM) {
-        console.error('HTML import requires turndown and jsdom. Install with: yarn add -D turndown jsdom');
+        console.error('HTML import requires turndown and jsdom. Install with: npm install -D turndown jsdom');
         process.exit(1);
       }
       
@@ -248,6 +260,7 @@ function importSubstack(opts) {
       // Convert HTML to Markdown
       const td = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced' });
       content = td.turndown(raw);
+      content = fixImageSyntax(content);
       description = row?.subtitle || pickDescriptionFromMarkdown(content);
     } else {
       // Handle Markdown files
