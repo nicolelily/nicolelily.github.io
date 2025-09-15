@@ -19,13 +19,13 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
   
   <main class="pt-24">
     <!-- Blog Header -->
-    <section class="section-padding bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+    <section class="section-padding bg-gradient-to-br from-gray-900 to-gray-800">
       <div class="container">
         <div class="text-center">
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
             Blog
           </h1>
-          <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Thoughts, tutorials, and insights on data science, machine learning, and the intersection of technology and society.
           </p>
         </div>
@@ -33,7 +33,7 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
     </section>
 
     <!-- Tags Filter -->
-    <section class="section-padding bg-gray-50 dark:bg-gray-800">
+    <section class="section-padding bg-gray-800">
       <div class="container">
         <div class="text-center mb-8">
           <h2 class="text-2xl font-semibold mb-4">Filter by Topic</h2>
@@ -42,7 +42,7 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
               All Posts
             </button>
             {allTags.map(tag => (
-              <button class="filter-tag px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-tag={tag}>
+              <button class="filter-tag px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-300 rounded-full text-sm hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-tag={tag}>
                 {tag}
               </button>
             ))}
@@ -71,12 +71,12 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
                 </div>
               </div>
               <div class="p-6">
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                  <a href={`/blog/${post.slug}`} class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <h2 class="text-xl font-semibold text-white mb-3">
+                  <a href={`/blog/${post.slug}`} class="hover:text-blue-400 transition-colors">
                     {post.data.title}
                   </a>
                 </h2>
-                <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                <p class="text-gray-300 mb-4 line-clamp-3">
                   {post.data.description}
                 </p>
                 <div class="flex flex-wrap gap-2 mb-4">
@@ -86,16 +86,16 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
                     </span>
                   ))}
                   {post.data.tags.length > 3 && (
-                    <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded text-xs">
+                    <span class="px-2 py-1 bg-gray-700 text-gray-400 rounded text-xs">
                       +{post.data.tags.length - 3} more
                     </span>
                   )}
                 </div>
                 <div class="flex items-center justify-between">
-                  <span class="text-sm text-gray-500 dark:text-gray-400">
+                  <span class="text-sm text-gray-400">
                     By {post.data.author}
                   </span>
-                  <a href={`/blog/${post.slug}`} class="text-blue-600 dark:text-blue-400 hover:underline text-sm">
+                  <a href={`/blog/${post.slug}`} class="text-blue-400 hover:underline text-sm">
                     Read more →
                   </a>
                 </div>
@@ -107,7 +107,7 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
     </section>
 
     <!-- Newsletter Signup -->
-    <section class="section-padding bg-gray-50 dark:bg-gray-800">
+    <section class="section-padding bg-gray-800">
       <div class="container">
         <div class="max-w-2xl mx-auto text-center">
           <h2 class="section-title">Stay Updated</h2>
@@ -118,14 +118,14 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
             <input 
               type="email" 
               placeholder="Enter your email" 
-              class="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              class="flex-1 px-4 py-2 border border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               required
             >
             <button type="submit" class="btn-primary whitespace-nowrap">
               Subscribe
             </button>
           </form>
-          <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+          <p class="text-xs text-gray-400 mt-2">
             No spam, unsubscribe at any time.
           </p>
         </div>
