@@ -13,26 +13,26 @@ This is Nicole Mark's personal portfolio website - a modern, responsive site sho
 ## Development Commands
 
 ### Core Development Workflow
-**Package Manager**: This project uses **yarn** as the preferred package manager due to better dependency resolution and build reliability.
+**Package Manager**: This project uses **npm** as the package manager for consistency between local development and CI/CD environments.
 
 ```bash
 # Install dependencies
-yarn install
+npm install
 
 # Start development server (http://localhost:4321)
-yarn dev
+npm run dev
 
 # Build for production
-yarn build
+npm run build
 
 # Preview production build locally
-yarn preview
+npm run preview
 
 # Run Astro CLI commands
-yarn astro
+npm run astro
 ```
 
-**Note**: Only `yarn.lock` should be committed. If `package-lock.json` exists, remove it to avoid conflicts.
+**Note**: Only `package-lock.json` should be committed. This ensures consistency between local and CI/CD builds.
 
 ### Development Server Details
 - Development server runs on `http://localhost:4321`
@@ -109,7 +109,7 @@ src/
 - **Trigger**: Automatic on push to `main` branch
 - **Workflow**: `.github/workflows/deploy.yml`
 - **Node Version**: 20
-- **Package Manager**: yarn@latest (configured to match local development)
+- **Package Manager**: npm@latest (configured to match local development)
 - **Build Action**: `withastro/action@v2`
 
 ### Site Configuration
