@@ -133,7 +133,7 @@ function writePost({ outDir, fm, body, filename, force }) {
 // Medium import: parse HTML files in <input>/posts
 function importMedium(opts) {
   if (!TurndownService || !JSDOM) {
-    console.error('Medium import requires turndown and jsdom. Install with: yarn add -D turndown jsdom');
+    console.error('Medium import requires turndown and jsdom. Install with: npm install -D turndown jsdom');
     process.exit(1);
   }
   const postsDir = path.join(opts.input, 'posts');
@@ -231,7 +231,7 @@ function importSubstack(opts) {
     if (f.endsWith('.html')) {
       // Handle HTML files (like your Substack export)
       if (!TurndownService || !JSDOM) {
-        console.error('HTML import requires turndown and jsdom. Install with: yarn add -D turndown jsdom');
+        console.error('HTML import requires turndown and jsdom. Install with: npm install -D turndown jsdom');
         process.exit(1);
       }
       
