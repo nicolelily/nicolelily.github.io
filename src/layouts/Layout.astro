@@ -8,7 +8,7 @@ const { title, description = "Nicole L, Mark - Data Scientist, Information Desig
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -22,71 +22,9 @@ const { title, description = "Nicole L, Mark - Data Scientist, Information Desig
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans antialiased">
+  <body class="bg-gray-900 text-gray-100 font-sans antialiased">
     <slot />
     
-    <script is:inline>
-      // Theme management system - runs immediately to prevent FOUC
-      (function() {
-        // Get theme from localStorage or default to light
-        const getStoredTheme = () => localStorage.getItem('theme') || 'light';
-        const isDark = () => document.documentElement.classList.contains('dark');
-        
-        // Apply theme to document
-        function setTheme(theme) {
-          if (theme === 'dark') {
-            document.documentElement.classList.add('dark');
-          } else {
-            document.documentElement.classList.remove('dark');
-          }
-          localStorage.setItem('theme', theme);
-        }
-        
-        // Update theme toggle icons
-        function updateThemeIcons() {
-          const currentlyDark = isDark();
-          const sunIcon = document.getElementById('sun-icon');
-          const moonIcon = document.getElementById('moon-icon');
-          
-          if (sunIcon && moonIcon) {
-            if (currentlyDark) {
-              // Dark mode - show sun icon (to switch to light)
-              sunIcon.style.display = 'block';
-              moonIcon.style.display = 'none';
-            } else {
-              // Light mode - show moon icon (to switch to dark)
-              sunIcon.style.display = 'none';
-              moonIcon.style.display = 'block';
-            }
-          }
-        }
-        
-        // Toggle theme function
-        function toggleTheme() {
-          const currentTheme = getStoredTheme();
-          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-          setTheme(newTheme);
-          updateThemeIcons();
-          console.log('Theme toggled to:', newTheme); // Debug log
-        }
-        
-        // Initialize theme immediately
-        const initialTheme = getStoredTheme();
-        setTheme(initialTheme);
-        
-        // Make functions globally available
-        window.toggleTheme = toggleTheme;
-        window.updateThemeIcons = updateThemeIcons;
-        window.getStoredTheme = getStoredTheme;
-        
-        // Update icons when DOM is ready
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', updateThemeIcons);
-        } else {
-          updateThemeIcons();
-        }
-      })();
-    </script>
   </body>
 </html>
 
@@ -105,15 +43,15 @@ const { title, description = "Nicole L, Mark - Data Scientist, Information Desig
   }
   
   ::-webkit-scrollbar-track {
-    @apply bg-gray-100 dark:bg-gray-800;
+    @apply bg-gray-800;
   }
   
   ::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+    @apply bg-gray-600 rounded-full;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-400 dark:bg-gray-500;
+    @apply bg-gray-500;
   }
 </style>
 
