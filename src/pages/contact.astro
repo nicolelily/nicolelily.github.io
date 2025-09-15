@@ -9,13 +9,13 @@ import '../styles/global.css';
   
   <main class="pt-24">
     <!-- Contact Header -->
-    <section class="section-padding bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+    <section class="section-padding bg-gradient-to-br from-gray-900 to-gray-800">
       <div class="container">
         <div class="text-center">
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
             Get In Touch
           </h1>
-          <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
             I like to work at the intersection of data, ideas, and impact. I'm energized by collaborators who care deeply about their work, who think creatively to solve problems, and express themselves authentically.
           </p>
         </div>
@@ -37,7 +37,7 @@ import '../styles/global.css';
             >
               <div class="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label for="firstName" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label for="firstName" class="block text-sm font-medium text-gray-300 mb-2">
                     First Name *
                   </label>
                   <input 
@@ -45,11 +45,11 @@ import '../styles/global.css';
                     id="firstName" 
                     name="first_name" 
                     required
-                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"
+                    class="w-full px-4 py-3 border border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"
                   >
                 </div>
                 <div>
-                  <label for="lastName" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label for="lastName" class="block text-sm font-medium text-gray-300 mb-2">
                     Last Name *
                   </label>
                   <input 
@@ -57,13 +57,13 @@ import '../styles/global.css';
                     id="lastName" 
                     name="last_name" 
                     required
-                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"
+                    class="w-full px-4 py-3 border border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"
                   >
                 </div>
               </div>
 
               <div>
-                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">
                   Email Address *
                 </label>
                 <input 
@@ -71,31 +71,31 @@ import '../styles/global.css';
                   id="email" 
                   name="_replyto" 
                   required
-                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"
+                  class="w-full px-4 py-3 border border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"
                 >
               </div>
 
               <div>
-                <label for="organization" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label for="organization" class="block text-sm font-medium text-gray-300 mb-2">
                   Organization/Company
                 </label>
                 <input 
                   type="text" 
                   id="organization" 
                   name="organization"
-                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"
+                  class="w-full px-4 py-3 border border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"
                 >
               </div>
 
               <div>
-                <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">
                   Subject *
                 </label>
                 <select 
                   id="subject" 
                   name="_subject" 
                   required
-                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"
+                  class="w-full px-4 py-3 border border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent"
                 >
                   <option value="">Select a subject</option>
                   <option value="collaboration">Research Collaboration</option>
@@ -109,7 +109,7 @@ import '../styles/global.css';
               </div>
 
               <div>
-                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label for="message" class="block text-sm font-medium text-gray-300 mb-2">
                   Message *
                 </label>
                 <textarea 
@@ -118,7 +118,7 @@ import '../styles/global.css';
                   rows="6" 
                   required
                   placeholder="Please provide details about your inquiry, project timeline, and any specific requirements..."
-                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent resize-vertical"
+                  class="w-full px-4 py-3 border border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand-primary focus:border-transparent resize-vertical"
                 ></textarea>
               </div>
 
@@ -155,7 +155,7 @@ import '../styles/global.css';
                   value="yes"
                   class="mt-1 h-4 w-4 text-brand-primary focus:ring-brand-primary border-gray-300 rounded"
                 >
-                <label for="newsletter" class="ml-2 text-sm text-gray-600 dark:text-gray-300">
+                <label for="newsletter" class="ml-2 text-sm text-gray-300">
                   I'd like to receive updates about new blog posts and research publications
                 </label>
               </div>
@@ -180,14 +180,14 @@ import '../styles/global.css';
               <div class="card p-6">
                 <div class="flex items-center mb-4">
                   <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mr-4">
-                    <span class="text-blue-600 dark:text-blue-400 text-xl">📧</span>
+                    <span class="text-blue-400 text-xl">📧</span>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 dark:text-white">Email</h3>
-                    <p class="text-gray-600 dark:text-gray-300">For general inquiries</p>
+                    <h3 class="font-semibold text-white">Email</h3>
+                    <p class="text-gray-300">For general inquiries</p>
                   </div>
                 </div>
-                <a href="mailto:nicoledesignsdata@pm.me" class="text-blue-600 dark:text-blue-400 hover:underline">
+                <a href="mailto:nicoledesignsdata@pm.me" class="text-blue-400 hover:underline">
                   nicoledesignsdata@pm.me
                 </a>
               </div>
@@ -196,14 +196,14 @@ import '../styles/global.css';
               <div class="card p-6">
                 <div class="flex items-center mb-4">
                   <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mr-4">
-                    <span class="text-blue-600 dark:text-blue-400 text-xl">💼</span>
+                    <span class="text-blue-400 text-xl">💼</span>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 dark:text-white">LinkedIn</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Professional networking</p>
+                    <h3 class="font-semibold text-white">LinkedIn</h3>
+                    <p class="text-gray-300">Professional networking</p>
                   </div>
                 </div>
-                <a href="https://linkedin.com/in/nicole-mark" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">
+                <a href="https://linkedin.com/in/nicole-mark" target="_blank" class="text-blue-400 hover:underline">
                   linkedin.com/in/nicole-mark
                 </a>
               </div>
@@ -211,15 +211,15 @@ import '../styles/global.css';
               <!-- GitHub -->
               <div class="card p-6">
                 <div class="flex items-center mb-4">
-                  <div class="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center mr-4">
-                    <span class="text-gray-600 dark:text-gray-400 text-xl">💻</span>
+                  <div class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mr-4">
+                    <span class="text-gray-400 text-xl">💻</span>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 dark:text-white">GitHub</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Code repositories and projects</p>
+                    <h3 class="font-semibold text-white">GitHub</h3>
+                    <p class="text-gray-300">Code repositories and projects</p>
                   </div>
                 </div>
-                <a href="https://github.com/nicolelily" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">
+                <a href="https://github.com/nicolelily" target="_blank" class="text-blue-400 hover:underline">
                   github.com/nicolelily
                 </a>
               </div>
@@ -228,14 +228,14 @@ import '../styles/global.css';
               <div class="card p-6">
                 <div class="flex items-center mb-4">
                   <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mr-4">
-                    <span class="text-blue-600 dark:text-blue-400 text-xl">☁️</span>
+                    <span class="text-blue-400 text-xl">☁️</span>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 dark:text-white">Bluesky</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Thoughts on data science and tech</p>
+                    <h3 class="font-semibold text-white">Bluesky</h3>
+                    <p class="text-gray-300">Thoughts on data science and tech</p>
                   </div>
                 </div>
-                <a href="https://bsky.app/profile/nicoledesignsdata.com" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">
+                <a href="https://bsky.app/profile/nicoledesignsdata.com" target="_blank" class="text-blue-400 hover:underline">
                   @nicoledesignsdata.com
                 </a>
               </div>
@@ -244,14 +244,14 @@ import '../styles/global.css';
               <div class="card p-6">
                 <div class="flex items-center mb-4">
                   <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mr-4">
-                    <span class="text-purple-600 dark:text-purple-400 text-xl">🐘</span>
+                    <span class="text-purple-400 text-xl">🐘</span>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 dark:text-white">Mastodon</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Open source social networking</p>
+                    <h3 class="font-semibold text-white">Mastodon</h3>
+                    <p class="text-gray-300">Open source social networking</p>
                   </div>
                 </div>
-                <a href="https://me.dm/@nicolemark" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">
+                <a href="https://me.dm/@nicolemark" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">
                   @nicolemark@me.dm
                 </a>
               </div>
@@ -286,7 +286,7 @@ import '../styles/global.css';
     </section>
 
     <!-- Speaking & Consulting -->
-    <section class="section-padding bg-gray-50 dark:bg-gray-800">
+    <section class="section-padding bg-gray-800">
       <div class="container">
         <h2 class="section-title text-center">Speaking & Consulting</h2>
         
@@ -294,14 +294,14 @@ import '../styles/global.css';
           <div class="card p-6">
             <div class="text-center mb-4">
               <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-purple-600 dark:text-purple-400 text-2xl">🎤</span>
+                <span class="text-purple-400 text-2xl">🎤</span>
               </div>
               <h3 class="text-xl font-semibold mb-2">Speaking Engagements</h3>
             </div>
-            <p class="text-gray-600 dark:text-gray-300 mb-4 text-center">
+            <p class="text-gray-300 mb-4 text-center">
               Available for conferences, workshops, podcasts, and corporate events on topics including:
             </p>
-            <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+            <ul class="text-sm text-gray-300 space-y-1">
               <li>• Machine Learning and AI Ethics</li>
               <li>• Data Visualization Best Practices</li>
               <li>• Healthcare Analytics Applications</li>
@@ -316,14 +316,14 @@ import '../styles/global.css';
           <div class="card p-6">
             <div class="text-center mb-4">
               <div class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-green-600 dark:text-green-400 text-2xl">💡</span>
+                <span class="text-green-400 text-2xl">💡</span>
               </div>
               <h3 class="text-xl font-semibold mb-2">Consulting Services</h3>
             </div>
-            <p class="text-gray-600 dark:text-gray-300 mb-4 text-center">
+            <p class="text-gray-300 mb-4 text-center">
               Offering consulting services for organizations looking to leverage data science and machine learning:
             </p>
-            <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+            <ul class="text-sm text-gray-300 space-y-1">
               <li>• Data Strategy and Analytics Roadmaps</li>
               <li>• ML Model Development and Deployment</li>
               <li>• Data Visualization and Dashboard Design</li>
@@ -346,28 +346,28 @@ import '../styles/global.css';
         <div class="max-w-3xl mx-auto space-y-6">
           <div class="card p-6">
             <h3 class="text-lg font-semibold mb-3">What types of projects do you work on?</h3>
-            <p class="text-gray-600 dark:text-gray-300">
+            <p class="text-gray-300">
               I work on a variety of data science projects including machine learning model development, data visualization dashboards, statistical analysis, and research collaborations. I'm particularly interested in healthcare analytics, ethical AI, and educational applications of data science.
             </p>
           </div>
 
           <div class="card p-6">
             <h3 class="text-lg font-semibold mb-3">Are you available for full-time positions?</h3>
-            <p class="text-gray-600 dark:text-gray-300">
+            <p class="text-gray-300">
               I'm currently pursuing my Master's degree and expect to graduate in Spring 2025. I'm open to discussing full-time opportunities that would begin after graduation, as well as part-time and consulting arrangements during my studies.
             </p>
           </div>
 
           <div class="card p-6">
             <h3 class="text-lg font-semibold mb-3">Do you mentor students or early-career professionals?</h3>
-            <p class="text-gray-600 dark:text-gray-300">
+            <p class="text-gray-300">
               Yes! I enjoy mentoring students and early-career professionals in data science. I currently supervise undergraduate research students and am happy to provide guidance on career development, academic pursuits, and technical skills development.
             </p>
           </div>
 
           <div class="card p-6">
             <h3 class="text-lg font-semibold mb-3">What's your typical response time?</h3>
-            <p class="text-gray-600 dark:text-gray-300">
+            <p class="text-gray-300">
               I aim to respond to all inquiries within 24-48 hours. During busy periods (such as conference seasons or thesis deadlines), it may take up to a week. For urgent matters, please indicate this in your subject line.
             </p>
           </div>

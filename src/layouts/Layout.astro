@@ -8,7 +8,7 @@ const { title, description = "Nicole L, Mark - Data Scientist, Information Desig
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -22,29 +22,9 @@ const { title, description = "Nicole L, Mark - Data Scientist, Information Desig
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans antialiased">
+  <body class="bg-gray-900 text-gray-100 font-sans antialiased">
     <slot />
     
-    <script>
-      // Dark mode toggle functionality
-      function initTheme() {
-        const theme = localStorage.getItem('theme') || 'light';
-        document.documentElement.classList.toggle('dark', theme === 'dark');
-      }
-      
-      function toggleTheme() {
-        const isDark = document.documentElement.classList.contains('dark');
-        const newTheme = isDark ? 'light' : 'dark';
-        document.documentElement.classList.toggle('dark', newTheme === 'dark');
-        localStorage.setItem('theme', newTheme);
-      }
-      
-      // Initialize theme on page load
-      initTheme();
-      
-      // Make toggle function globally available
-      window.toggleTheme = toggleTheme;
-    </script>
   </body>
 </html>
 
@@ -63,15 +43,15 @@ const { title, description = "Nicole L, Mark - Data Scientist, Information Desig
   }
   
   ::-webkit-scrollbar-track {
-    @apply bg-gray-100 dark:bg-gray-800;
+    @apply bg-gray-800;
   }
   
   ::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+    @apply bg-gray-600 rounded-full;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-400 dark:bg-gray-500;
+    @apply bg-gray-500;
   }
 </style>
 
