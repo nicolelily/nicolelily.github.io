@@ -37,7 +37,7 @@ const relatedPosts = allPosts
         <div class="max-w-4xl mx-auto text-center">
           <div class="flex flex-wrap justify-center gap-2 mb-4">
             {post.data.tags.map(tag => (
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm">
                 {tag}
               </span>
             ))}
@@ -98,7 +98,7 @@ const relatedPosts = allPosts
             <h3 class="text-lg font-semibold mb-4">Tags</h3>
             <div class="flex flex-wrap gap-2">
               {post.data.tags.map(tag => (
-                <a href={`/blog?tag=${tag}`} class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
+                <a href={`/blog?tag=${tag}`} class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm hover:bg-blue-800 transition-colors">
                   {tag}
                 </a>
               ))}
@@ -215,44 +215,29 @@ const relatedPosts = allPosts
 
     /* Custom prose styles for better readability */
     .prose {
-      color: rgb(75 85 99); /* Improved contrast - gray-600 instead of gray-700 */
-    }
-
-    .dark .prose {
-      color: rgb(229 231 235); /* Better contrast in dark mode - gray-200 instead of gray-300 */
+      color: rgb(209 213 219); /* gray-300 - match About Me section */
     }
     
     /* Improve paragraph text specifically */
     .prose p {
-      color: rgb(107 114 128); /* gray-500 for body text */
+      color: rgb(209 213 219); /* gray-300 - match About Me section */
       line-height: 1.75;
       margin-bottom: 1.25rem;
     }
-    
-    .dark .prose p {
-      color: rgb(209 213 219); /* gray-300 for dark mode */
-    }
 
     .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-      color: rgb(17 24 39);
+      color: rgb(249 250 251); /* white for headings */
       font-weight: 600;
       margin-top: 2rem;
       margin-bottom: 1rem;
     }
 
-    .dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4, .dark .prose h5, .dark .prose h6 {
-      color: rgb(249 250 251);
-    }
-
     .prose code {
-      background-color: rgb(243 244 246);
+      background-color: rgb(55 65 81); /* gray-700 for dark theme */
       padding: 0.125rem 0.25rem;
       border-radius: 0.25rem;
       font-size: 0.875em;
-    }
-
-    .dark .prose code {
-      background-color: rgb(55 65 81);
+      color: rgb(209 213 219); /* gray-300 */
     }
 
     .prose pre {
@@ -274,28 +259,16 @@ const relatedPosts = allPosts
       border-left: 4px solid rgb(59 130 246);
       padding-left: 1rem;
       font-style: italic;
-      color: rgb(75 85 99);
-    }
-
-    .dark .prose blockquote {
-      color: rgb(156 163 175);
+      color: rgb(156 163 175); /* gray-400 for quotes */
     }
 
     .prose a {
-      color: rgb(59 130 246);
+      color: rgb(96 165 250); /* blue-400 for links */
       text-decoration: underline;
     }
 
     .prose a:hover {
-      color: rgb(37 99 235);
-    }
-
-    .dark .prose a {
-      color: rgb(96 165 250);
-    }
-
-    .dark .prose a:hover {
-      color: rgb(59 130 246);
+      color: rgb(59 130 246); /* blue-500 for hover */
     }
   </style>
 </Layout>
