@@ -19,13 +19,7 @@ Last week, the National Science Foundation (NSF) [terminated hundreds of governm
 
 > For 250 years, in the public sphere, emotion was considered secondary to rational thinking. The accepted wisdom of the civilised world was that facts trumped feelings.
 
-[
-
-![don't ask why neon sign](https://images.unsplash.com/photo-1560615253-8b8d1ea96363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHw5fHx2aWJlc3xlbnwwfHx8fDE3NDU3MzU3OTh8MA&ixlib=rb-4.0.3&q=80&w=1080 "don't ask why neon sign")
-
-
-
-](https://images.unsplash.com/photo-1560615253-8b8d1ea96363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHw5fHx2aWJlc3xlbnwwfHx8fDE3NDU3MzU3OTh8MA&ixlib=rb-4.0.3&q=80&w=1080)
+![don't ask why neon sign](https://images.unsplash.com/photo-1560615253-8b8d1ea96363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHw5fHx2aWJlc3xlbnwwfHx8fDE3NDU3MzU3OTh8MA&ixlib=rb-4.0.3&q=80&w=1080)
 
 Photo by [K X I T H V I S U A L S](true) on [Unsplash](https://unsplash.com)
 
@@ -55,13 +49,7 @@ On July 13, right in the thick of Brat summer, Donald Trump held [a rally in But
 
 The combination of Biden’s terrible debate performance and Trump’s post-assassination-attempt popularity boost created a _vibe shift_ in the 2024 presidential election. Vice President Kamala Harris became the new Democratic nominee on July 21, and the _vibes shifted again_, aligning with her cause for a time. [She went from Auntie Coconut to brat in mid-July.](https://www.cnn.com/2024/10/30/politics/american-battleground-kamala-harris-brat-summer/index.html) [Statista](https://www.statista.com) posted [the chart below showing the increasing search interest](https://www.instagram.com/p/C94dmQ6twF-/?igsh=MWxqNXFldXhjM3g3Zw) for “Kamala Harris brat” to Instagram on July 26.
 
-[
-
-![](https://substack-post-media.s3.amazonaws.com/public/images/8cc04cd4-c4a4-4b7f-b3d2-e8b335dfd2d8_1260x1273.heic)
-
-
-
-](https://substackcdn.com/image/fetch/$s_!0eER!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8cc04cd4-c4a4-4b7f-b3d2-e8b335dfd2d8_1260x1273.heic)
+![Search interest chart for Kamala Harris brat](https://substack-post-media.s3.amazonaws.com/public/images/8cc04cd4-c4a4-4b7f-b3d2-e8b335dfd2d8_1260x1273.heic)
 
 On September 24, Marcus Collins [wrote in Forbes](https://www.forbes.com/sites/marcuscollins/2024/09/25/why-vibes-will-likely-decide-the-harris-vs-trump-presidential-election/),
 
