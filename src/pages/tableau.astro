@@ -336,7 +336,7 @@ import '../styles/global.css';
           // Filter projects
           projects.forEach(project => {
             const category = project.getAttribute('data-category');
-            if (filter === 'all' || category === filter) {
+            if (filter === 'all' || category.includes(filter)) {
               project.classList.remove('hidden');
             } else {
               project.classList.add('hidden');
