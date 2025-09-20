@@ -1,0 +1,178 @@
+---
+export interface Props {
+  title: string;
+  workbookName: string;
+  embedCode?: string;
+  staticImage?: string;
+  description?: string;
+  category?: string;
+  tags?: string[];
+  dataSources?: string;
+  tools?: string;
+  keyFeatures?: string;
+  tableauPublicUrl?: string;
+}
+
+const { 
+  title, 
+  workbookName, 
+  embedCode, 
+  staticImage, 
+  description,
+  category = '',
+  tags = [],
+  dataSources,
+  tools,
+  keyFeatures,
+  tableauPublicUrl
+} = Astro.props;
+
+// Generate a unique ID for this visualization
+const vizId = `viz-${workbookName.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase()}`;
+---
+
+<div class="tableau-project" data-category={category}>
+  <div class="grid lg:grid-cols-2 gap-8 items-start">
+    <div class="order-2 lg:order-1">
+      <div class="card p-6">
+        <h3 class="text-2xl font-semibold text-white mb-4">
+          {title}
+        </h3>
+        {description && (
+          <p class="text-gray-300 mb-4">
+            {description}
+          </p>
+        )}
+        {tags.length > 0 && (
+          <div class="flex flex-wrap gap-2 mb-4">
+            {tags.map(tag => (
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+        <div class="space-y-2 text-sm text-gray-400">
+          {dataSources && <p><strong>Data Source:</strong> {dataSources}</p>}
+          {tools && <p><strong>Tools Used:</strong> {tools}</p>}
+          {keyFeatures && <p><strong>Key Features:</strong> {keyFeatures}</p>}
+        </div>
+        {tableauPublicUrl && (
+          <div class="mt-4">
+            <a href={tableauPublicUrl} 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-primary inline-flex items-center gap-2">
+              <span>View on Tableau Public</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </div>
+        )}
+      </div>
+    </div>
+    <div class="order-1 lg:order-2">
+      <div class="tableau-container">
+        {embedCode ? (
+          <!-- Actual Tableau embed -->
+          <div class="tableau-embed" id={vizId}>
+            <Fragment set:html={embedCode} />
+          </div>
+        ) : (
+          <!-- Placeholder when no embed code is provided -->
+          <div class="tableau-placeholder">
+            <div class="flex items-center justify-center h-full">
+              <div class="text-center">
+                {staticImage ? (
+                  <img src={staticImage} 
+                       alt={`Screenshot of ${title}`} 
+                       class="max-w-full h-auto rounded-lg mb-4" />
+                ) : (
+                  <div class="text-6xl mb-4 text-gray-400">📊</div>
+                )}
+                <p class="text-gray-400 mb-4">Interactive Tableau Visualization</p>
+                {tableauPublicUrl && (
+                  <a href={tableauPublicUrl} 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     class="btn-primary">
+                    View on Tableau Public →
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .tableau-container {
+    @apply bg-gray-800 rounded-xl p-4 min-h-[400px] lg:min-h-[500px];
+  }
+  
+  .tableau-placeholder {
+    @apply bg-gray-700 rounded-lg border-2 border-dashed border-gray-600 min-h-[350px] lg:min-h-[450px];
+  }
+  
+  .tableau-embed {
+    @apply min-h-[350px] lg:min-h-[450px];
+  }
+  
+  /* Responsive Tableau embed styles */
+  .tableau-embed :global(.tableauPlaceholder) {
+    position: relative;
+    width: 100%;
+    height: 450px;
+  }
+  
+  .tableau-embed :global(.tableauViz) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .tableau-container {
+      @apply min-h-[300px];
+    }
+    
+    .tableau-placeholder,
+    .tableau-embed {
+      @apply min-h-[280px];
+    }
+    
+    .tableau-embed :global(.tableauPlaceholder) {
+      height: 300px;
+    }
+  }
+  
+  .tableau-project {
+    @apply transition-opacity duration-300;
+  }
+  
+  .tableau-project.hidden {
+    @apply opacity-0 pointer-events-none h-0 overflow-hidden;
+  }
+</style>
+
+<script>
+  // Handle responsive Tableau embeds
+  document.addEventListener('DOMContentLoaded', function() {
+    // This script will handle any Tableau-specific responsive behavior
+    // when actual embed codes are added
+    
+    const tableauEmbeds = document.querySelectorAll('.tableau-embed');
+    
+    tableauEmbeds.forEach(embed => {
+      // Add any Tableau-specific event listeners or resize handlers here
+      // This is where you'd integrate with Tableau's JavaScript API if needed
+    });
+  });
+</script>
