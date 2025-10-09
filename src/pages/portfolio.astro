@@ -50,7 +50,7 @@ import "../styles/global.css";
 
         <div class="grid lg:grid-cols-2 gap-12 mb-16">
           <div
-            class="card overflow-hidden project-item"
+            class="card overflow-hidden project-item h-full flex flex-col"
             data-category="visualization webapp"
           >
             <div
@@ -62,61 +62,11 @@ import "../styles/global.css";
                 <h3 class="text-xl font-semibold">Interactive Dashboard</h3>
               </div>
             </div>
-            <div class="p-6">
-              <h3 class="text-2xl font-semibold text-white mb-3">
-                Healthcare Analytics Dashboard
-              </h3>
-              <p class="text-gray-300 mb-4">
-                A comprehensive real-time dashboard for healthcare analytics
-                featuring patient outcome predictions, resource utilization
-                tracking, and interactive data exploration tools. Built with
-                React, D3.js, and Python backend.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"
-                  >React</span
-                >
-                <span
-                  class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm"
-                  >D3.js</span
-                >
-                <span
-                  class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm"
-                  >Python</span
-                >
-                <span
-                  class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-sm"
-                  >Healthcare</span
-                >
-              </div>
-              <div class="flex gap-3">
-                <a href="#" class="btn-primary flex-1 text-center">Live Demo</a>
-                <a href="#" class="btn-secondary flex-1 text-center"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="card overflow-hidden project-item"
-            data-category="webapp research"
-          >
-            <div
-              class="h-64 bg-gradient-to-br from-amber-400 to-red-500 flex items-center justify-center relative overflow-hidden"
-            >
-              <div class="absolute inset-0 bg-black bg-opacity-20"></div>
-              <div class="relative z-10 text-center text-white">
-                <div class="text-6xl mb-4">🏛️</div>
-                <h3 class="text-xl font-semibold">Legislative Database</h3>
-              </div>
-            </div>
-            <div class="p-6">
+            <div class="p-6 flex-1 flex flex-col">
               <h3 class="text-2xl font-semibold text-white mb-3">
                 U.S. Breed-Specific Legislation Database
               </h3>
-              <p class="text-gray-300 mb-4">
+              <p class="text-gray-300 mb-4 flex-1">
                 A comprehensive searchable database tracking breed-specific
                 legislation across the United States. Features interactive maps,
                 detailed policy analysis, and real-time updates on legislative
@@ -140,7 +90,7 @@ import "../styles/global.css";
                   >Animal Rights</span
                 >
               </div>
-              <div class="flex gap-3">
+              <div class="flex gap-3 mt-auto">
                 <a
                   href="https://bsldb.app"
                   target="_blank"
@@ -149,6 +99,59 @@ import "../styles/global.css";
                 >
                 <a
                   href="https://github.com/nicolelily/us-bsl-db"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-secondary flex-1 text-center">View Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card overflow-hidden project-item h-full flex flex-col"
+            data-category="visualization webapp"
+          >
+            <div
+              class="h-64 bg-gradient-to-br from-red-400 to-yellow-500 flex items-center justify-center relative overflow-hidden"
+            >
+              <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+              <div class="relative z-10 text-center text-white">
+                <div class="text-6xl mb-4">🗺️</div>
+                <h3 class="text-xl font-semibold">Interactive Map</h3>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-semibold text-white mb-3">
+                America's Rudest Cities
+              </h3>
+              <p class="text-gray-300 mb-4 flex-1">
+                Interactive map visualization of cities in the U.S. ranked by
+                Preply's rudeness score, created with Leaflet, an open-source
+                JavaScript mapping library.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-sm"
+                  >Interactive Maps</span
+                >
+                <span
+                  class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm"
+                  >Data Viz</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"
+                  >Geographic Data</span
+                >
+              </div>
+              <div class="flex gap-3 mt-auto">
+                <a
+                  href="https://nicolelily.github.io/rude-cities"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-primary flex-1 text-center">Live App</a
+                >
+                <a
+                  href="https://github.com/nicolelily/rude-cities"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn-secondary flex-1 text-center">View Code</a
@@ -265,55 +268,6 @@ import "../styles/global.css";
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-blue-400 hover:underline text-sm">Course →</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="card overflow-hidden project-item"
-            data-category="visualization webapp"
-          >
-            <div
-              class="h-48 bg-gradient-to-br from-red-400 to-yellow-500 flex items-center justify-center"
-            >
-              <span class="text-white text-4xl">🗺️</span>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">
-                America's Rudest Cities
-              </h3>
-              <p class="text-gray-300 mb-4">
-                Interactive map visualization of cities in the U.S. ranked by
-                Preply's rudeness score, created with Leaflet, an open-source
-                JavaScript mapping library.
-              </p>
-              <div class="flex gap-2 mb-4">
-                <span
-                  class="px-2 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded text-xs"
-                  >Interactive Maps</span
-                >
-                <span
-                  class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded text-xs"
-                  >Data Viz</span
-                >
-                <span
-                  class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-xs"
-                  >Geographic Data</span
-                >
-              </div>
-              <div class="flex gap-2">
-                <a
-                  href="https://nicolelily.github.io/rude-cities"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-blue-400 hover:underline text-sm">Live App →</a
-                >
-                <a
-                  href="https://github.com/nicolelily/rude-cities"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-blue-400 hover:underline text-sm">View Code →</a
                 >
               </div>
             </div>
