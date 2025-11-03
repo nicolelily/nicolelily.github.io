@@ -2,53 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
 import "../styles/global.css";
-import { XMLParser } from "fast-xml-parser";
-
-// Fetch latest Substack posts from RSS feed
-const SUBSTACK_RSS_URL = "https://selectallfromdata.substack.com/feed";
-
-interface SubstackPost {
-  title: string;
-  link: string;
-  pubDate: string;
-  description: string;
-}
-
-let substackPosts: SubstackPost[] = [];
-
-try {
-  const response = await fetch(SUBSTACK_RSS_URL);
-  
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
-  }
-  
-  const xmlText = await response.text();
-  
-  // Parse RSS feed using fast-xml-parser
-  const parser = new XMLParser();
-  const result = parser.parse(xmlText);
-  
-  // Extract items from the RSS feed
-  const items = result.rss?.channel?.item || [];
-  const itemsArray = Array.isArray(items) ? items : [items];
-  
-  substackPosts = itemsArray.slice(0, 3).map((item: any) => {
-    const title = item.title || "";
-    const link = item.link || "";
-    const pubDate = item.pubDate || "";
-    const description = item.description || "";
-    
-    // Clean up description (remove HTML tags and limit length)
-    const cleanDescription = description
-      .replace(/<[^>]*>/g, "")
-      .substring(0, 150) + "...";
-    
-    return { title, link, pubDate, description: cleanDescription };
-  });
-} catch (error) {
-  console.error("Error fetching Substack posts:", error);
-}
 
 // Format date helper
 function formatDate(dateString: string): string {
@@ -466,34 +419,10 @@ function formatDate(dateString: string): string {
         research.
       </p>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {substackPosts.length > 0 ? (
-          substackPosts.map((post) => (
-            <article class="card p-6">
-              <div class="text-sm text-gray-400 mb-2">
-                {formatDate(post.pubDate)}
-              </div>
-              <h3 class="text-xl font-semibold mb-3">
-                {post.title}
-              </h3>
-              <p class="text-gray-300 mb-4">
-                {post.description}
-              </p>
-              <a 
-                href={post.link} 
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-brand-accent hover:underline"
-              >
-                Read on Substack →
-              </a>
-            </article>
-          ))
-        ) : (
-          <div class="col-span-3 text-center text-gray-400">
-            <p>Loading latest posts from Substack...</p>
-          </div>
-        )}
+      <div id="substack-posts" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="col-span-3 text-center text-gray-400">
+          <p>Loading latest posts from Substack...</p>
+        </div>
       </div>
 
       <div class="text-center mt-12">
@@ -938,5 +867,63 @@ function formatDate(dateString: string): string {
         });
       }
     });
+  </script>
+
+  <script>
+    // Fetch and display Substack posts on the client side
+    async function loadSubstackPosts() {
+      try {
+        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://selectallfromdata.substack.com/feed');
+        const data = await response.json();
+        
+        if (data.status === 'ok' && data.items && data.items.length > 0) {
+          const posts = data.items.slice(0, 3);
+          const postsHtml = posts.map(post => {
+            // Clean description
+            const description = post.description
+              .replace(/<[^>]*>/g, '')
+              .substring(0, 150) + '...';
+            
+            // Format date
+            const date = new Date(post.pubDate);
+            const formattedDate = date.toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            });
+            
+            return `
+              <article class="card p-6">
+                <div class="text-sm text-gray-400 mb-2">${formattedDate}</div>
+                <h3 class="text-xl font-semibold mb-3">${post.title}</h3>
+                <p class="text-gray-300 mb-4">${description}</p>
+                <a 
+                  href="${post.link}" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-brand-accent hover:underline"
+                >
+                  Read on Substack →
+                </a>
+              </article>
+            `;
+          }).join('');
+          
+          const container = document.getElementById('substack-posts');
+          if (container) {
+            container.innerHTML = postsHtml;
+          }
+        }
+      } catch (error) {
+        console.error('Error loading Substack posts:', error);
+        const container = document.getElementById('substack-posts');
+        if (container) {
+          container.innerHTML = '<div class="col-span-3 text-center text-gray-400"><p>Unable to load posts. <a href="https://selectallfromdata.substack.com" target="_blank" rel="noopener noreferrer" class="text-brand-accent hover:underline">Visit Substack →</a></p></div>';
+        }
+      }
+    }
+    
+    // Load posts when page loads
+    document.addEventListener('DOMContentLoaded', loadSubstackPosts);
   </script>
 </Layout>
