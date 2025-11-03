@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
 import "../styles/global.css";
+import { XMLParser } from "fast-xml-parser";
 
 // Fetch latest Substack posts from RSS feed
 const SUBSTACK_RSS_URL = "https://selectallfromdata.substack.com/feed";
@@ -19,16 +20,19 @@ try {
   const response = await fetch(SUBSTACK_RSS_URL);
   const xmlText = await response.text();
   
-  // Parse RSS feed
-  const parser = new DOMParser();
-  const xmlDoc = parser.parseFromString(xmlText, "text/xml");
-  const items = xmlDoc.querySelectorAll("item");
+  // Parse RSS feed using fast-xml-parser
+  const parser = new XMLParser();
+  const result = parser.parse(xmlText);
   
-  substackPosts = Array.from(items).slice(0, 3).map((item) => {
-    const title = item.querySelector("title")?.textContent || "";
-    const link = item.querySelector("link")?.textContent || "";
-    const pubDate = item.querySelector("pubDate")?.textContent || "";
-    const description = item.querySelector("description")?.textContent || "";
+  // Extract items from the RSS feed
+  const items = result.rss?.channel?.item || [];
+  const itemsArray = Array.isArray(items) ? items : [items];
+  
+  substackPosts = itemsArray.slice(0, 3).map((item: any) => {
+    const title = item.title || "";
+    const link = item.link || "";
+    const pubDate = item.pubDate || "";
+    const description = item.description || "";
     
     // Clean up description (remove HTML tags and limit length)
     const cleanDescription = description
