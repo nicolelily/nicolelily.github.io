@@ -2,6 +2,54 @@
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
 import "../styles/global.css";
+
+// Fetch latest Substack posts from RSS feed
+const SUBSTACK_RSS_URL = "https://selectallfromdata.substack.com/feed";
+
+interface SubstackPost {
+  title: string;
+  link: string;
+  pubDate: string;
+  description: string;
+}
+
+let substackPosts: SubstackPost[] = [];
+
+try {
+  const response = await fetch(SUBSTACK_RSS_URL);
+  const xmlText = await response.text();
+  
+  // Parse RSS feed
+  const parser = new DOMParser();
+  const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+  const items = xmlDoc.querySelectorAll("item");
+  
+  substackPosts = Array.from(items).slice(0, 3).map((item) => {
+    const title = item.querySelector("title")?.textContent || "";
+    const link = item.querySelector("link")?.textContent || "";
+    const pubDate = item.querySelector("pubDate")?.textContent || "";
+    const description = item.querySelector("description")?.textContent || "";
+    
+    // Clean up description (remove HTML tags and limit length)
+    const cleanDescription = description
+      .replace(/<[^>]*>/g, "")
+      .substring(0, 150) + "...";
+    
+    return { title, link, pubDate, description: cleanDescription };
+  });
+} catch (error) {
+  console.error("Error fetching Substack posts:", error);
+}
+
+// Format date helper
+function formatDate(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
 ---
 
 <Layout title="Nicole L. Mark">
@@ -403,50 +451,51 @@ import "../styles/global.css";
   <!-- Blog Section -->
   <section id="blog" class="section-padding bg-gray-800">
     <div class="container">
-      <h2 class="section-title text-center">Latest Blog Posts</h2>
+      <h2 class="section-title text-center">Latest from Substack</h2>
       <p class="section-subtitle text-center mx-auto">
         Thoughts, tutorials, and insights on data science, technology, and
         research.
       </p>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <article class="card p-6">
-          <div class="text-sm text-gray-400 mb-2">March 15, 2024</div>
-          <h3 class="text-xl font-semibold mb-3">
-            Getting Started with Advanced Data Visualization
-          </h3>
-          <p class="text-gray-300 mb-4">
-            A comprehensive guide to creating compelling visualizations that
-            tell meaningful stories with your data.
-          </p>
-          <a href="#" class="text-brand-accent hover:underline">Read more →</a>
-        </article>
-
-        <article class="card p-6">
-          <div class="text-sm text-gray-400 mb-2">March 10, 2024</div>
-          <h3 class="text-xl font-semibold mb-3">
-            Machine Learning in Production
-          </h3>
-          <p class="text-gray-300 mb-4">
-            Best practices for deploying and maintaining machine learning models
-            in real-world applications.
-          </p>
-          <a href="#" class="text-brand-accent hover:underline">Read more →</a>
-        </article>
-
-        <article class="card p-6">
-          <div class="text-sm text-gray-400 mb-2">March 5, 2024</div>
-          <h3 class="text-xl font-semibold mb-3">The Future of Data Science</h3>
-          <p class="text-gray-300 mb-4">
-            Exploring emerging trends and technologies that are shaping the
-            future of data science and analytics.
-          </p>
-          <a href="#" class="text-brand-accent hover:underline">Read more →</a>
-        </article>
+        {substackPosts.length > 0 ? (
+          substackPosts.map((post) => (
+            <article class="card p-6">
+              <div class="text-sm text-gray-400 mb-2">
+                {formatDate(post.pubDate)}
+              </div>
+              <h3 class="text-xl font-semibold mb-3">
+                {post.title}
+              </h3>
+              <p class="text-gray-300 mb-4">
+                {post.description}
+              </p>
+              <a 
+                href={post.link} 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-brand-accent hover:underline"
+              >
+                Read on Substack →
+              </a>
+            </article>
+          ))
+        ) : (
+          <div class="col-span-3 text-center text-gray-400">
+            <p>Loading latest posts from Substack...</p>
+          </div>
+        )}
       </div>
 
       <div class="text-center mt-12">
-        <a href="/blog" class="btn-primary">View All Posts</a>
+        <a 
+          href="https://nicoledesignsdata.substack.com" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary"
+        >
+          Visit My Substack
+        </a>
       </div>
     </div>
   </section>
