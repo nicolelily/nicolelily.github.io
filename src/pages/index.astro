@@ -18,6 +18,11 @@ let substackPosts: SubstackPost[] = [];
 
 try {
   const response = await fetch(SUBSTACK_RSS_URL);
+  
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  
   const xmlText = await response.text();
   
   // Parse RSS feed using fast-xml-parser
@@ -493,7 +498,7 @@ function formatDate(dateString: string): string {
 
       <div class="text-center mt-12">
         <a 
-          href="https://nicoledesignsdata.substack.com" 
+          href="https://selectallfromdata.substack.com" 
           target="_blank"
           rel="noopener noreferrer"
           class="btn-primary"
